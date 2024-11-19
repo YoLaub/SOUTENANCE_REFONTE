@@ -1,0 +1,23 @@
+.social-header {
+	position: fixed;
+	top: 20%;
+	right: 0;
+	max-width: 50px;
+	z-index: 9;
+}
+.social-header a{
+    display: block;
+    margin: 5px 0;
+    background: #bf713c;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+.social-header a:hover{
+  	background:#82c156;
+  	color:#fff;
+}
