@@ -149,7 +149,7 @@ img {
 }
 
 
-@media (max-width: 412px) {
+@media (max-width: 576px) {
 
     /*=============GENERAL============*/
     body {
@@ -193,7 +193,7 @@ img {
     }
 
     .burger {
-        margin-left: 350px;
+        margin-left: 470px;
         height: 32px;
         font-size: 2.5rem;
     }
@@ -203,7 +203,7 @@ img {
     }
 
     .hautPage a {
-        width: 45%;
+        width: 180px;
     }
 
     .hautPage #info {
@@ -237,11 +237,11 @@ img {
         background-color: var(--element);
         padding-top: 16px;
         padding-left: 16px;
-        margin-right: 158px;
+        margin-right: 216px;
         position: relative;
         top: -296px;
-        left: -296px;
-        height: 308px;
+        left: -413px;
+        height: 315px;
         font-size: 1.3rem;
         font-weight: bold;
     }
@@ -325,7 +325,7 @@ img {
      #services .servicesCard{
         display: flex;
         flex-direction: column;
-        margin: 8px 64px;
+        margin: 8px 120px;
         background-color: var(--carte);
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -346,6 +346,7 @@ img {
         margin-bottom: 16px;
 
      }
+
 
      #services .servicesCard .bouton{
         font-size: 1.2rem;
@@ -374,7 +375,7 @@ img {
         background-color: var(--fontColor);
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 32px 64px;
+        margin: 60px 100px;
         padding: 16px 0;
      }
 
@@ -385,7 +386,7 @@ img {
 
      .endMain i{
         font-size: 2.3rem;
-        margin-left: 350px;
+        margin-left: 500px;
      }
 
      .endMain img{
@@ -396,16 +397,40 @@ img {
 
      /*==============carousel services=============*/
      .carousel-control-prev {
-        left: 45px;
+        left: 32px;
     }
 
     .carousel-control-next {
-        right: 45px;
+        right: 50px;
     }
 
     .carousel-control-next, .carousel-control-prev {
         top: 0px;
     }
+
+    .carousel-control-prev-icon{
+        background-image: none;
+
+     }
+
+     .carousel-control-prev-icon i{
+        font-size: 3rem;
+        color: var(--fontColor);
+
+     }
+
+     .carousel-control-next-icon {
+        background-image: none;
+    }
+
+    .carousel-control-next-icon i {
+        font-size: 3rem;
+        color: var(--fontColor);
+    }
+
+
+
+
 
     /*-------------MAIN La ferme------------*/
 
