@@ -237,7 +237,7 @@ img {
         background-color: var(--element);
         padding-top: 16px;
         padding-left: 16px;
-        margin-right: 150px;
+        margin-right: 158px;
         position: relative;
         top: -296px;
         left: -296px;
@@ -255,7 +255,7 @@ img {
     }
 
 
-    /*========================MAIN==================*/
+    /*========================MAIN ACCUEIL==================*/
 
     .ariane{
         display: flex;
@@ -406,6 +406,19 @@ img {
     .carousel-control-next, .carousel-control-prev {
         top: 0px;
     }
+
+    /*-------------MAIN La ferme------------*/
+
+
+
+
+/*-------------MAIN Nos services------------*/
+
+/*-------------MAIN Actus------------*/
+
+/*-------------MAIN contact------------*/
+
+/*-------------MAIN Mentions------------*/
 
 
      /*===============FOOTER============*/
