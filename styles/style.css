@@ -144,9 +144,16 @@ img {
 /*===================courousel services===============*/
 
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     top: 175px;
 }
+
+
+/*.carousel-control-next-icon i, .carousel-control-prev-icon i {
+        font-size: 3rem;
+        color: var(--fontColor);
+    }*/
 
 
 @media (max-width: 576px) {
@@ -154,14 +161,17 @@ img {
     /*=============GENERAL============*/
     body {
         padding: 0px;
-       
+    }
+
+    .contenaire{
+        width: 576px;
+        padding: 0 ;
     }
 
     header {
         background-color: var(--headerFooter);
         height: 280px;
         border-bottom: 4px solid var(--element);
-
     }
 
     h1 {
@@ -198,7 +208,8 @@ img {
         font-size: 2.5rem;
     }
 
-    .hautPage h3, .hautPage p {
+    .hautPage h3,
+    .hautPage p {
         display: none;
     }
 
@@ -257,7 +268,7 @@ img {
 
     /*========================MAIN ACCUEIL==================*/
 
-    .ariane{
+    .ariane {
         display: flex;
         justify-content: center;
         background-color: var(--element);
@@ -267,88 +278,90 @@ img {
         border-radius: 0 0 10px 10px;
     }
 
-    .ariane p{
+    .ariane p {
         margin: 4px;
     }
 
-    #presentation{
+    #presentation {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center;
+        text-align: justify;
         margin: 50px 32px;
     }
 
-    #presentation h2{
+    #presentation h2 {
         font-size: 1.6rem;
         font-weight: bold;
         margin-bottom: 32px;
+        text-align: center;
     }
 
 
     /*============Slide==============*/
 
-    #image{
+    #image {
         width: 80%;
         margin-bottom: 32px;
         margin-left: 10%;
         margin-right: 10%;
         border-radius: 15px;
-        
-        
+
+
     }
 
-    #image img{
+    #image img {
         border-radius: 15px;
     }
 
-     /*============services==============*/
+    /*============services==============*/
 
-     #services{
+    #services {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         text-align: center;
-     }
+    }
 
-     #services h2{
+    #services h2 {
         font-weight: bold;
         margin-bottom: 32px;
         margin-top: 64px;
-     }
+    }
 
-     /*============carte==============*/
+    /*============carte==============*/
 
 
-     #services .servicesCard{
+    #services .servicesCard {
         display: flex;
         flex-direction: column;
-        margin: 8px 120px;
+        margin: 8px 10%;
         background-color: var(--carte);
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-     }
+    }
 
-     #services .servicesCard h3, #services .servicesCard p{
+    #services .servicesCard h3,
+    #services .servicesCard p {
         margin-left: 24px;
         margin-right: 24px;
-     }
+    }
 
-     #services .servicesCard h3{
+    #services .servicesCard h3 {
         margin-top: 32px;
         margin-bottom: 16px;
         font-weight: bold;
-     }
+    }
 
-     #services .servicesCard p{
+    #services .servicesCard p {
         margin-bottom: 16px;
 
-     }
+    }
 
 
-     #services .servicesCard .bouton{
+    #services .servicesCard .bouton {
         font-size: 1.2rem;
         font-weight: bold;
         color: var(--fondPage);
@@ -358,14 +371,14 @@ img {
         margin: 32px 32px;
         padding: 8px 0;
 
-     }
+    }
 
-     #services .servicesCard img{
+    #services .servicesCard img {
         border-radius: 0px 0px 15px 15px;
 
-     }
+    }
 
-     .bouton a h3{
+    .bouton a h3 {
 
         font-size: 1.2rem;
         font-weight: bold;
@@ -377,26 +390,26 @@ img {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin: 60px 100px;
         padding: 16px 0;
-     }
+    }
 
-     .bouton h3{
+    .bouton h3 {
         margin: 0;
-     }
-     
+    }
 
-     .endMain i{
+
+    .endMain i {
         font-size: 2.3rem;
         margin-left: 500px;
-     }
+    }
 
-     .endMain img{
+    .endMain img {
         width: 60%;
         margin-left: 21%;
-    
-     }
 
-     /*==============carousel services=============*/
-     .carousel-control-prev {
+    }
+
+    /*==============carousel services=============*/
+    .carousel-control-prev {
         left: 32px;
     }
 
@@ -404,22 +417,388 @@ img {
         right: 50px;
     }
 
-    .carousel-control-next, .carousel-control-prev {
+    .carousel-control-next,
+    .carousel-control-prev {
         top: 0px;
     }
 
-    .carousel-control-prev-icon{
+
+
+    .carousel-control-prev-icon {
         background-image: none;
 
-     }
+    }
 
-     .carousel-control-prev-icon i{
+    .carousel-control-prev-icon i,
+    .carousel-control-next-icon i {
+        display: none;
+
+    }
+
+    .carousel-control-next-icon {
+        background-image: none;
+    }
+
+
+
+
+    /*-------------MAIN La ferme------------*/
+
+    /*============La ferme-carousel========*/
+
+    .d-md-block {
+        display: block !important;
+    }
+
+    .carousel-caption {
+        background-color: var(--element);
+        position: absolute;
+        right: 15%;
+        border-radius: 15px;
+        bottom: -1.75rem;
+        height: 126px;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #fff;
+        text-align: center;
+    }
+
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 15%;
+        margin-bottom: 0.5rem;
+        margin-left: 15%;
+    }
+
+    .carousel {
+        position: relative;
+       
+    }
+
+    .carousel h5 {
+        margin-bottom: 3px;
+    }
+
+    .carousel p {
+        font-size: 0.8rem;
+    }
+
+    #presentationImg .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-bottom: 32px;
+
+    }
+
+
+    /*============La ferme - nos valeur=======*/
+
+    .valeur {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .valeur h2 {
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    .valeur p {
+        text-align: justify;
+        padding: 0 32px;
+        margin-bottom: 32px;
+    }
+
+    .valeur img {
+        width: 200px;
+    }
+
+
+
+
+
+
+
+
+    /*-------------MAIN Nos services------------*/
+
+
+    #services .presentation {
+        text-align: justify;
+        margin: 16px 64px;
+    }
+
+
+    #services #carouselServices{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    #services #carouselServices .servicesCard p{
+        text-align: justify;
+
+    }
+
+    #services #carouselServices .servicesCard .bouton{
+        text-align: center;
+    }
+
+
+
+
+    /*-------------MAIN Actus------------*/
+
+    /*-------------MAIN contact------------*/
+
+    /*-------------MAIN Mentions------------*/
+
+
+    /*===============FOOTER============*/
+
+    footer {
+        background-color: var(--headerFooter);
+
+    }
+
+    .basPage {
+        display: flex;
+        flex-direction: row;
+        padding: 32px 16px;
+        justify-content: space-between;
+    }
+
+    .basPage img {
+        width: 30%;
+        height: 30%;
+        margin-top: 16px;
+    }
+
+    .basPage .nousTrouver {
+        text-align: center;
+        font-size: 0.8rem;
+        width: 30%;
+    }
+
+    .basPage .nousTrouver i {
+        font-size: 1.3rem;
+    }
+
+    .basPage .nousTrouver h3 {
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .basPage .partenaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 30%;
+    }
+
+    .basPage .partenaire h3 {
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-bottom: 0px;
+    }
+
+    #mentions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    #mentions a:nth-child(1) {
+        margin-right: 12px;
+    }
+
+}
+
+
+
+/*===================++++412px++++=============*/
+
+@media (max-width: 412px) {
+
+    .contenaire{
+        width: 412px;
+        padding: 0 ;
+    }
+
+
+    /*===============HEADER===============*/
+
+    .burger {
+        margin-left: 329px;
+        height: 32px;
+        font-size: 2.5rem;
+    }
+
+
+
+    /*==================MENU BURGER===============*/
+
+    #menuBurger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: var(--element);
+        padding-top: 16px;
+        padding-left: 16px;
+        margin-right: 157px;
+        position: relative;
+        top: -296px;
+        left: -413px;
+        height: 315px;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+
+
+    /*========================MAIN ACCUEIL==================*/
+
+
+
+    /*============Slide==============*/
+
+
+    /*============services==============*/
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    #services h2 {
+        font-weight: bold;
+        margin-bottom: 32px;
+        margin-top: 64px;
+    }
+
+    /*============carte==============*/
+
+
+    #services .servicesCard {
+        display: flex;
+        flex-direction: column;
+        margin: 8px 75px;
+        background-color: var(--carte);
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    #services .servicesCard h3,
+    #services .servicesCard p {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    #services .servicesCard h3 {
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-weight: bold;
+    }
+
+    #services .servicesCard p {
+        margin-bottom: 16px;
+
+    }
+
+
+    #services .servicesCard .bouton {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--fondPage);
+        background-color: var(--fontColor);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 32px 32px;
+        padding: 8px 0;
+
+    }
+
+    #services .servicesCard img {
+        border-radius: 0px 0px 15px 15px;
+
+    }
+
+    .bouton a h3 {
+
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+        align-items: center;
+        color: var(--fondPage);
+        background-color: var(--fontColor);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 60px 100px;
+        padding: 16px 0;
+    }
+
+    .bouton h3 {
+        margin: 0;
+    }
+
+
+    .endMain i {
+        font-size: 2.3rem;
+        margin-left: 347px;
+    }
+
+    .endMain img {
+        width: 60%;
+        margin-left: 21%;
+
+    }
+
+    /*==============carousel services=============*/
+    .carousel-control-prev {
+        left: 32px;
+    }
+
+    .carousel-control-next {
+        right: 50px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 0px;
+    }
+
+    .carousel-control-prev-icon {
+        background-image: none;
+
+    }
+
+    .carousel-control-prev-icon i {
         font-size: 3rem;
         color: var(--fontColor);
 
-     }
+    }
 
-     .carousel-control-next-icon {
+    .carousel-control-next-icon {
         background-image: none;
     }
 
@@ -437,75 +816,26 @@ img {
 
 
 
-/*-------------MAIN Nos services------------*/
+    /*-------------MAIN Nos services------------*/
 
-/*-------------MAIN Actus------------*/
+    /*-------------MAIN Actus------------*/
 
-/*-------------MAIN contact------------*/
+    /*-------------MAIN contact------------*/
 
-/*-------------MAIN Mentions------------*/
+    /*-------------MAIN Mentions------------*/
 
 
-     /*===============FOOTER============*/
+    /*===============FOOTER============*/
 
-     footer{
-        background-color: var(--headerFooter);
-        
-     }
 
-     .basPage {
-        display: flex;
-        flex-direction: row;
-        padding: 32px 16px;
-        justify-content: space-between;
-    }
-    
-    .basPage img{
-        width: 30%;
-        height: 30%;
-        margin-top: 16px;
-    }
 
-    .basPage .nousTrouver{
-        text-align: center;
-        font-size: 0.8rem;
-        width: 30%;
-    }
-
-    .basPage .nousTrouver i{
-        font-size: 1.3rem;
-    }
-
-    .basPage .nousTrouver h3{
-        font-weight: bold;
-        font-size: 0.9rem;
-        margin-bottom: 8px;
-    }
-
-    .basPage .partenaire{
+    .basPage .partenaire {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
         width: 30%;
-    }
-
-    .basPage .partenaire h3{
-        font-weight: bold;
-        font-size: 0.9rem;
-        margin-bottom: 0px;
-    }
-
-    #mentions{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 0.8rem;
-    }
-
-    #mentions a:nth-child(1){
-        margin-right: 12px;
     }
 
 }

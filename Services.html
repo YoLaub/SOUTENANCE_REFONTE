@@ -22,93 +22,198 @@
 </head>
 
 <body>
-    <header class="container">
-            <section class="hautPage ">
-                <i id="menu-icon" class="bi bi-list burger"></i>
-                <div id="info">
-                    <div class="nousTrouver">
-                        <h3>nous trouver</h3>
-                        <p>Le Moulin du Bois, 35131 <br>Chartres-de-Bretagne</p>
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </div>
-                    <div class="telephone">
-                        <i class="bi bi-telephone-fill"></i>
-                        <p>06 48 24 81 30</p>
-                    </div>
+    <header class="contenaire">
+        <section class="hautPage ">
+            <i id="menu-icon" class="bi bi-list burger"></i>
+            <div id="info">
+                <div class="nousTrouver">
+                    <h3>nous trouver</h3>
+                    <p>Le Moulin du Bois, 35131 <br>Chartres-de-Bretagne</p>
+                    <i class="bi bi-geo-alt-fill"></i>
                 </div>
+                <div class="telephone">
+                    <i data-bs-toggle="popover" title="Popover title" data-bs-content="06 48 24 81 30"
+                        class="bi bi-telephone-fill"></i>
+                    <p>06 48 24 81 30</p>
+                </div>
+            </div>
 
-                <a href="index.html"><img src="images/Element/logo.png" alt="logo"></a>
+            <a href="index.html"><img src="images/Element/logo.png" alt="logo"></a>
+        </section>
+
+        <nav id="menuPrincipale">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="whoIam.html">Qui sommes nous ?</a>
+                </li>
+                <li>
+                    <a href="Services.html">Services</a>
+                </li>
+                <li>
+                    <a href="Actu.html">Actualité</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+        <nav id="menuBurger">
+
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="whoIam.html">Qui sommes nous ?</a>
+                </li>
+                <li>
+                    <a href="Services.html">Services</a>
+                </li>
+                <li>
+                    <a href="Actu.html">Actualité</a>
+                </li>
+                <li>
+                    <a href="Contact.html">Contact</a>
+                </li>
+            </ul>
+
+            <section id="reseau">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
             </section>
 
-            <nav id="menuPrincipale">
-                <ul>
-                    <li>
-                        <a href="index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="whoIam.html">Qui sommes nous ?</a>
-                    </li>
-                    <li>
-                        <a href="Services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="Actu.html">Actualité</a>
-                    </li>
-                    <li>
-                        <a href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-
-            </nav>
-            <nav id="menuBurger">
-                
-                <ul>
-                    <li>
-                        <a href="index.html">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="whoIam.html">Qui sommes nous ?</a>
-                    </li>
-                    <li>
-                        <a href="Services.html">Services</a>
-                    </li>
-                    <li>
-                        <a href="Actu.html">Actualité</a>
-                    </li>
-                    <li>
-                        <a href="Contact.html">Contact</a>
-                    </li>
-                </ul>
-
-                <section id="reseau">
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                </section>
-
-            </nav>
+        </nav>
 
 
     </header>
 
 
-    <main class="container">
+    <main class="contenaire">
 
-        <section>
+        <section id="services">
+
+            <h2>Nos Services</h2>
+            <p class="presentation">Découvrez l'ensemble de nos services à la Ferme Pédagogique des Quatre Saisons ! Que
+                vous soyez à la recherche d'une sortie éducative pour votre classe, d'une journée en famille ou d'une
+                activité de team-building pour votre entreprise, nous avons ce qu'il vous faut. Nos services incluent
+                des visites guidées, des ateliers pratiques, des démonstrations agricoles et bien plus encore. Chaque
+                activité est conçue pour être à la fois éducative et ludique, permettant à chacun de s'immerger
+                pleinement dans la vie à la ferme. Pour en savoir plus sur nos offres et réserver votre expérience,
+                rendez-vous sur une des cartes ci-dessous. Nous sommes impatients de vous accueillir et de partager avec
+                vous notre passion pour l'agriculture et la nature.</p>
+
+            <div id="carouselServices" class=" carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="servicesCard "
+                        data-description ="Notre service de ferme pédagogique est conçu pour offrir une expérience immersive et éducative à tous nos visiteurs. Que vous soyez une école, un centre de loisirs ou une famille, nous proposons des programmes adaptés à tous les âges et à tous les niveaux d'intérêt. Nos ateliers interactifs permettent aux participants de découvrir les différentes facettes de l'agriculture, de la culture des légumes à l'élevage des animaux, en passant par la transformation des produits de la ferme. Chaque activité est encadrée par des professionnels passionnés, qui partagent leur savoir-faire et leur amour de la nature. En choisissant notre ferme pédagogique, vous offrez à vos enfants ou à vos élèves une opportunité unique d'apprendre en s'amusant, tout en développant leur respect pour l'environnement et les animaux. Pour plus d'informations sur nos programmes et pour réserver votre visite, n'hésitez pas à nous contacter via notre page dédiée." data-price="10.00">
+                            <h3>La ferme pédagogique</h3>
+                            <p>Notre service de ferme pédagogique est conçu pour offrir une expérience immersive et éducative à tous nos visiteurs. Que vous soyez une école, un centre de loisirs ou une famille, nous proposons des programmes adaptés à tous les âges et à tous les niveaux d'intérêt...</p>
+                            <a data-bs-toggle="modal" data-bs-target="#modal">
+                                <p id="myInput" class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/ferme_pédagogique.jpg" alt="ferme-pedagogique">
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="servicesCard">
+                            <h3>Nos écuries</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
+                                ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
+                                laborum? Veniam, dolorem vel.</p>
+                            <a href="Services.html">
+                                <p class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/STABLE.jpg" alt="Nos écurie">
+                    </div>
+                    <div class="carousel-item">
+                        <article class="servicesCard" >
+                            <h3>Nos activités</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
+                                ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
+                                laborum? Veniam, dolorem vel.</p>
+                            <a href="Services.html">
+                                <p class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/PONEY.jpg" alt="Les activités">
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="servicesCard">
+                            <h3>La location de salle</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
+                                ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
+                                laborum? Veniam, dolorem vel.</p>
+                            <a href="Services.html">
+                                <p class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/RECEPTION.jpg" alt="Nos salle">
+                        </article>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                            class="bi bi-arrow-left-circle-fill"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselServices"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"><i
+                            class="bi bi-arrow-right-circle-fill"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">La ferme pédagogique</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="modal-description"></p>
+                            <p id="modal-price"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
+        <section class="container endMain">
+            <div class="bouton">
+                <a href="Contact.html">
+                    <h3>Contacter-nous !</h3>
+                </a>
+            </div>
+            <a href="#menu-icon"><i class="bi bi-caret-up-square-fill"></i></a>
+            <img src="images/sketch_cow_accueil.jpeg" alt="dessin d'une vache">
+        </section>
+
     </main>
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -135,7 +240,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="scripts/menu.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/modal.js"></script>
 
 </body>
 
