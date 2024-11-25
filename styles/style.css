@@ -49,8 +49,11 @@ body {
 
 }
 
-.container {
+.contenaire {
     padding: 0;
+    max-width: 1200px;
+    width: 1200px;
+    contain: content;
 }
 
 /* Styles pour les en-têtes */
@@ -163,9 +166,11 @@ img {
         padding: 0px;
     }
 
-    .contenaire{
+    .contenaire {
         width: 576px;
-        padding: 0 ;
+        max-width: 576px;
+        padding: 0;
+        contain: content;
     }
 
     header {
@@ -248,7 +253,7 @@ img {
         background-color: var(--element);
         padding-top: 16px;
         padding-left: 16px;
-        margin-right: 216px;
+        margin-right: 219px;
         position: relative;
         top: -296px;
         left: -413px;
@@ -274,7 +279,7 @@ img {
         background-color: var(--element);
         font-weight: bold;
         font-size: 1.1rem;
-        margin: -1px 38%;
+        margin: 0px 38%;
         border-radius: 0 0 10px 10px;
     }
 
@@ -480,7 +485,7 @@ img {
 
     .carousel {
         position: relative;
-       
+
     }
 
     .carousel h5 {
@@ -491,13 +496,16 @@ img {
         font-size: 0.8rem;
     }
 
+
     #presentationImg .carousel-inner {
         position: relative;
-        width: 100%;
+        width: 90%;
         overflow: hidden;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin-bottom: 32px;
+        margin-left: 5%;
+        margin-right: auto;
 
     }
 
@@ -543,17 +551,17 @@ img {
     }
 
 
-    #services #carouselServices{
+    #services #carouselServices {
         margin-top: 60px;
         margin-bottom: 60px;
     }
 
-    #services #carouselServices .servicesCard p{
+    #services #carouselServices .servicesCard p {
         text-align: justify;
 
     }
 
-    #services #carouselServices .servicesCard .bouton{
+    #services #carouselServices .servicesCard .bouton {
         text-align: center;
     }
 
@@ -579,12 +587,13 @@ img {
         flex-direction: row;
         padding: 32px 16px;
         justify-content: space-between;
+        align-items: center;
     }
 
     .basPage img {
         width: 30%;
         height: 30%;
-        margin-top: 16px;
+        margin-top: 0px;
     }
 
     .basPage .nousTrouver {
@@ -612,6 +621,7 @@ img {
         width: 30%;
     }
 
+
     .basPage .partenaire h3 {
         font-weight: bold;
         font-size: 0.9rem;
@@ -637,9 +647,9 @@ img {
 
 @media (max-width: 412px) {
 
-    .contenaire{
+    .contenaire {
         width: 412px;
-        padding: 0 ;
+        padding: 0;
     }
 
 
@@ -650,8 +660,6 @@ img {
         height: 32px;
         font-size: 2.5rem;
     }
-
-
 
     /*==================MENU BURGER===============*/
 
@@ -671,12 +679,7 @@ img {
         font-weight: bold;
     }
 
-
-
     /*========================MAIN ACCUEIL==================*/
-
-
-
     /*============Slide==============*/
 
 
@@ -696,13 +699,22 @@ img {
         margin-top: 64px;
     }
 
+    #services .presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: 50px 32px;
+    }
+
     /*============carte==============*/
 
 
     #services .servicesCard {
         display: flex;
         flex-direction: column;
-        margin: 8px 75px;
+        margin: 8px 16px;
         background-color: var(--carte);
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -753,7 +765,7 @@ img {
         background-color: var(--fontColor);
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 60px 100px;
+        margin: 60px 62px;
         padding: 16px 0;
     }
 
@@ -764,7 +776,7 @@ img {
 
     .endMain i {
         font-size: 2.3rem;
-        margin-left: 347px;
+        margin-left: 329px;
     }
 
     .endMain img {
@@ -772,6 +784,7 @@ img {
         margin-left: 21%;
 
     }
+
 
     /*==============carousel services=============*/
     .carousel-control-prev {
@@ -813,6 +826,30 @@ img {
 
     /*-------------MAIN La ferme------------*/
 
+    #presentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: 50px 32px;
+    }
+
+    #presentationImg .carousel-inner{
+        margin: 0 24px;
+    }
+
+    .carousel-caption {
+        height: 142px;
+    }
+
+     /*============La ferme - nos valeur=======*/
+
+
+    .valeur h2 {
+        font-size: 2rem;
+        margin-top: 32px;
+    }
 
 
 
@@ -829,13 +866,182 @@ img {
 
 
 
+    .basPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 16px;
+        justify-content: space-between;
+    }
+
     .basPage .partenaire {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 30%;
+        width: 100%;
+
     }
+
+    .basPage .logoFooter{
+        width: 60%;
+    }
+
+    .basPage .partenaire h3 {
+        font-size: 1.2rem;
+        margin-top: 32px;
+    }
+
+    .basPage .partenaire img {
+        width: 20%;
+        margin-top: 8px;
+    }
+
+    .basPage .nousTrouver {
+        display: flex;
+        /*flex-direction: column;*/
+        flex-direction: row;
+        text-align: center;
+        margin: 8px 0px;
+        font-size: 0.8rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+}
+
+@media (max-width: 320px) {
+
+    /*=================GENERALE==============*/
+
+    .contenaire {
+        width: 320px;
+        padding: 0;
+        contain: content;
+    }
+
+    #menuBurger {
+        margin-right: 122px;
+
+    }
+
+    .burger {
+        margin-left: 258px;
+    }
+
+    
+    .endMain i {
+        margin-left: 258px;
+    }
+
+
+
+
+    .basPage {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 16px;
+        justify-content: space-between;
+        border-top: 2px solid var(--element);
+    }
+
+    .basPage .partenaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .basPage .logoFooter{
+        width: 60%;
+    }
+
+    .basPage .partenaire h3 {
+        font-size: 1.2rem;
+        margin-top: 32px;
+    }
+
+    .basPage .partenaire img {
+        width: 20%;
+        margin-top: 8px;
+    }
+
+    .basPage .nousTrouver {
+        display: flex;
+        /*flex-direction: column;*/
+        flex-direction: row;
+        text-align: center;
+        margin: 8px 0px;
+        font-size: 0.8rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+
+    /*-------------MAIN La ferme------------*/
+
+    .ariane {
+        display: flex;
+        justify-content: center;
+        background-color: var(--element);
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 0px 35%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .ariane p {
+        margin: 4px;
+    }
+
+    #presentation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        margin: 50px 32px;
+    }
+
+    #presentation h2{
+        font-size: 1.4rem;
+    }
+
+    #presentationImg .carousel-inner{
+        margin: 0 24px;
+    }
+
+    .carousel-caption {
+        height: 100px;
+    }
+
+    .carousel-caption h5{
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        display: none;
+    }
+
+     /*============La ferme - nos valeur=======*/
+
+
+    .valeur h2 {
+        font-size: 1.3rem;
+        margin-top: 32px;
+    }
+
+
+
 
 }
