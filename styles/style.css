@@ -45,7 +45,6 @@ body {
     line-height: 1.6;
     background-color: var(--fondPage);
     color: var(--fontColor);
-    padding: 20px;
 
 }
 
@@ -54,6 +53,7 @@ body {
     max-width: 1200px;
     width: 1200px;
     contain: content;
+    margin: 0 auto;
 }
 
 /* Styles pour les en-têtes */
@@ -164,10 +164,11 @@ img {
     /*=============GENERAL============*/
     body {
         padding: 0px;
+        width: 576px;
     }
 
     .contenaire {
-        width: 576px;
+        width: 100%;
         max-width: 576px;
         padding: 0;
         contain: content;
@@ -332,11 +333,12 @@ img {
 
     #services h2 {
         font-weight: bold;
+        font-size: 2.5rem;
         margin-bottom: 32px;
         margin-top: 64px;
     }
 
-    /*============carte==============*/
+    /*============carte services==============*/
 
 
     #services .servicesCard {
@@ -349,7 +351,7 @@ img {
     }
 
     #services .servicesCard h3,
-    #services .servicesCard p {
+    #services .servicesCard .serviceInfo {
         margin-left: 24px;
         margin-right: 24px;
     }
@@ -358,11 +360,6 @@ img {
         margin-top: 32px;
         margin-bottom: 16px;
         font-weight: bold;
-    }
-
-    #services .servicesCard p {
-        margin-bottom: 16px;
-
     }
 
 
@@ -400,6 +397,55 @@ img {
     .bouton h3 {
         margin: 0;
     }
+
+
+    #information1 .tarif, #information2 .tarif, #information3 .tarif, #information4 .tarif {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid var(--fontColor) ;
+        padding-top: 32px;
+
+    }
+
+    #information1 i, #information2 i, #information3 i, #information4 i{
+        font-size: 1.5rem;
+        font-weight: bolder;
+        color: var(--fontColor);
+        margin-right: 16px;
+        
+
+    }
+
+    #information1 p, #information2 p, #information3 p, #information4 p{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    #information1 .detail, #information2 .detail, #information3 .detail, #information4 .detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+    
+    .sketch{
+        width: 60%;
+        margin-bottom: -16px;
+        margin-left: 22.5%;
+
+    }
+
+    .card-body{
+        background-color: var(--carte);
+        border: none;
+    }
+
+
+    /*============FIN DU MENU===============*/
 
 
     .endMain i {
@@ -457,6 +503,7 @@ img {
 
     .carousel-caption {
         background-color: var(--element);
+        opacity: 0.9;
         position: absolute;
         right: 15%;
         border-radius: 15px;
@@ -647,8 +694,13 @@ img {
 
 @media (max-width: 412px) {
 
-    .contenaire {
+    body{
         width: 412px;
+    }
+
+    .contenaire {
+        width: 100%;
+        max-width: 412px;
         padding: 0;
     }
 
@@ -912,8 +964,13 @@ img {
 
     /*=================GENERALE==============*/
 
-    .contenaire {
+    body{
         width: 320px;
+    }
+
+    .contenaire {
+        width: 100%;
+        max-width: 320px;
         padding: 0;
         contain: content;
     }
