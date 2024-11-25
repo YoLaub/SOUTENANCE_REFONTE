@@ -552,8 +552,8 @@ img {
 
 
     #services #carouselServices {
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 16px;
+        margin-bottom: 32px;
     }
 
     #services #carouselServices .servicesCard p {
@@ -691,12 +691,6 @@ img {
         justify-content: center;
         align-content: center;
         text-align: center;
-    }
-
-    #services h2 {
-        font-weight: bold;
-        margin-bottom: 32px;
-        margin-top: 64px;
     }
 
     #services .presentation {
@@ -1010,11 +1004,13 @@ img {
         justify-content: center;
         align-items: center;
         text-align: justify;
-        margin: 50px 32px;
+        margin: 32px 16px;
     }
 
-    #presentation h2{
-        font-size: 1.4rem;
+    #services h2{
+        margin-top: 16px;
+        margin-bottom: 8px;
+
     }
 
     #presentationImg .carousel-inner{
@@ -1040,6 +1036,8 @@ img {
         font-size: 1.3rem;
         margin-top: 32px;
     }
+
+/*============SERVICES=======*/
 
 
 
