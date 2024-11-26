@@ -980,6 +980,10 @@ img {
         padding: 0;
         contain: content;
     }
+
+    header {
+        height: 380px;
+    }
     
 
     .contenaire {
@@ -991,6 +995,10 @@ img {
 
     #menuBurger {
         margin-right: 122px;
+    }
+
+    #menuBurger #cross{
+        margin-top: 50px;
 
     }
 
