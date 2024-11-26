@@ -42,18 +42,17 @@
 /* Styles de base pour le corps de la page */
 body {
     font-family: var(--font);
-    line-height: 1.6;
-    background-color: var(--fondPage);
     color: var(--fontColor);
-
+    width: 100%;
+    border: 0;
+    padding: 0;
+    contain: content;
 }
 
 .contenaire {
-    padding: 0;
     max-width: 1200px;
     width: 1200px;
-    contain: content;
-    margin: 0 auto;
+    margin: 0 ;
 }
 
 /* Styles pour les en-têtes */
@@ -134,7 +133,13 @@ img {
 
 
 /*==================HEADER=================*/
-
+#image {
+    width: 80%;
+    margin-bottom: 32px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+}
 /*----------------HAUT-------------*/
 
 .hautPage {
@@ -259,8 +264,10 @@ img {
         top: -296px;
         left: -413px;
         height: 315px;
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         font-weight: bold;
+        z-index: 1000;
+
     }
 
     #menuBurger ul {
@@ -307,15 +314,12 @@ img {
 
     /*============Slide==============*/
 
-    #image {
-        width: 80%;
-        margin-bottom: 32px;
-        margin-left: 10%;
-        margin-right: 10%;
-        border-radius: 15px;
 
 
+    #image{
+        display: none;
     }
+
 
     #image img {
         border-radius: 15px;
@@ -754,6 +758,11 @@ img {
         margin: 50px 32px;
     }
 
+    #image{
+        display: none;
+    }
+
+
     /*============carte==============*/
 
 
@@ -965,8 +974,13 @@ img {
     /*=================GENERALE==============*/
 
     body{
-        width: 320px;
+        max-width: 320px;
+        width: 100%;
+        max-width: 320px;
+        padding: 0;
+        contain: content;
     }
+    
 
     .contenaire {
         width: 100%;
@@ -989,8 +1003,9 @@ img {
         margin-left: 258px;
     }
 
-
-
+    #image{
+        display: none;
+    }
 
     .basPage {
         display: flex;
