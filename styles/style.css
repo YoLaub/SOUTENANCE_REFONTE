@@ -2,6 +2,7 @@
 :root {
     --element: #B8776A;
     --carte: #B8B66A;
+    --fondForm: #eeedd5;
     --fondPage: #FFFFFF;
     --headerFooter: #9CB76A;
     --doth: #D9D9D9;
@@ -47,13 +48,9 @@ body {
     border: 0;
     padding: 0;
     contain: content;
+    font-size: 16px;
 }
 
-.contenaire {
-    max-width: 1200px;
-    width: 1200px;
-    margin: 0 ;
-}
 
 /* Styles pour les en-têtes */
 h1,
@@ -84,7 +81,7 @@ a:hover {
 ul,
 ol {
     margin-bottom: 15px;
-    padding-left: 20px;
+    padding-left: 0px;
     list-style: none;
 }
 
@@ -92,6 +89,16 @@ ol {
 /* Styles pour les formulaires */
 form {
     margin-bottom: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/*form p:nth-child(1), form p:nth-child(2), form p:nth-child(3), form p:nth-child(4) {
+    width: 70%;
+}*/
+
+form p:nth-child(5){
+    width: 100%;
 }
 
 label {
@@ -102,25 +109,32 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="number"],
 input[type="password"],
 textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid var(--doth);
+    background-color: var(--fondForm);
     border-radius: 5px;
 }
 
 input[type="submit"] {
-    width: auto;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    color: var(--fondPage);
+    background-color: var(--fontColor);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 32px 0px;
+    padding: 8px 42px;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    transform: scale(1.1);
 }
 
 /* Styles pour les images */
@@ -140,6 +154,7 @@ img {
     margin-right: 10%;
     border-radius: 15px;
 }
+
 /*----------------HAUT-------------*/
 
 .hautPage {
@@ -170,14 +185,9 @@ img {
     body {
         padding: 0px;
         width: 576px;
+        font-size: 1.1rem;
     }
 
-    .contenaire {
-        width: 100%;
-        max-width: 576px;
-        padding: 0;
-        contain: content;
-    }
 
     header {
         background-color: var(--headerFooter);
@@ -200,6 +210,7 @@ img {
         align-items: center;
         flex-direction: column;
         height: 100%;
+        justify-content: center;
 
     }
 
@@ -217,7 +228,6 @@ img {
 
     .burger {
         margin-left: 470px;
-        height: 32px;
         font-size: 2.5rem;
     }
 
@@ -233,11 +243,13 @@ img {
     .hautPage #info {
         display: flex;
         flex-direction: row;
+        margin-top: 24px;
+
 
     }
 
     .hautPage .nousTrouver {
-        margin-right: 20px;
+        margin-right: 40px;
         font-size: 1.5rem;
     }
 
@@ -257,27 +269,26 @@ img {
     #menuBurger {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        text-align: center;
         background-color: var(--element);
-        padding-top: 16px;
-        padding-left: 16px;
-        margin-right: 0;
-        margin-left: 0;
+        width: 236px;
+        height: 388px;
         position: relative;
-        top: -732px;
-        right: 0;
+        top: -738px;
+        right: -152px;
         font-size: 1.8rem;
         font-weight: bold;
-        z-index: 1000;
-
+        border-radius: 0 0 15px 15px;
     }
 
+
+
     #menuBurger ul {
-        padding-top: 35px;
+        padding-top: 65px;
     }
 
     #menuBurger #reseau {
-        margin-bottom: 16px;
+        margin-top: 26px;
     }
 
 
@@ -318,7 +329,7 @@ img {
 
 
 
-    #image{
+    #image {
         display: none;
     }
 
@@ -405,47 +416,59 @@ img {
     }
 
 
-    #information1 .tarif, #information2 .tarif, #information3 .tarif, #information4 .tarif {
+    #information1 .tarif,
+    #information2 .tarif,
+    #information3 .tarif,
+    #information4 .tarif {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        border-top: 1px solid var(--fontColor) ;
+        border-top: 1px solid var(--fontColor);
         padding-top: 32px;
 
     }
 
-    #information1 i, #information2 i, #information3 i, #information4 i{
+    #information1 i,
+    #information2 i,
+    #information3 i,
+    #information4 i {
         font-size: 1.5rem;
         font-weight: bolder;
         color: var(--fontColor);
         margin-right: 16px;
-        
+
 
     }
 
-    #information1 p, #information2 p, #information3 p, #information4 p{
+    #information1 p,
+    #information2 p,
+    #information3 p,
+    #information4 p {
         font-size: 1rem;
         font-weight: bold;
         margin: 0;
     }
 
-    #information1 .detail, #information2 .detail, #information3 .detail, #information4 .detail{
+    #information1 .detail,
+    #information2 .detail,
+    #information3 .detail,
+    #information4 .detail {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-bottom: 16px;
     }
-    
-    .sketch{
+
+    .sketch {
         width: 60%;
         margin-bottom: -16px;
         margin-left: 22.5%;
 
     }
 
-    .card-body{
+    .card-body {
         background-color: var(--carte);
         border: none;
     }
@@ -456,7 +479,7 @@ img {
 
     .endMain i {
         font-size: 2.3rem;
-        margin-left: 500px;
+        margin-left: 85%;
     }
 
     .endMain img {
@@ -546,7 +569,8 @@ img {
     }
 
     .carousel p {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
+        padding: 16px;
     }
 
 
@@ -700,42 +724,34 @@ img {
 
 @media (max-width: 412px) {
 
-    body{
+    body {
         width: 412px;
     }
 
-    .contenaire {
-        width: 100%;
-        max-width: 412px;
-        padding: 0;
-    }
 
 
     /*===============HEADER===============*/
 
     .burger {
-        margin-left: 329px;
-        height: 32px;
+        margin-left: 80%;
         font-size: 2.5rem;
+    }
+
+    #menuBurger {
+        width: 236px;
+        height: 388px;
+        position: relative;
+        top: -738px;
+        right: -79px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        border-radius: 0 0 15px 15px;
     }
 
     /*==================MENU BURGER===============*/
 
-    #menuBurger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: var(--element);
-        padding-top: 16px;
-        padding-left: 16px;
-        margin-right: 157px;
-        position: relative;
-        top: -296px;
-        left: -413px;
-        height: 315px;
-        font-size: 1.3rem;
-        font-weight: bold;
-    }
+
+
 
     /*========================MAIN ACCUEIL==================*/
     /*============Slide==============*/
@@ -760,7 +776,7 @@ img {
         margin: 50px 32px;
     }
 
-    #image{
+    #image {
         display: none;
     }
 
@@ -833,7 +849,7 @@ img {
 
     .endMain i {
         font-size: 2.3rem;
-        margin-left: 329px;
+        margin-left: 85%;
     }
 
     .endMain img {
@@ -883,7 +899,7 @@ img {
 
     /*-------------MAIN La ferme------------*/
 
-    #presentation{
+    #presentation {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -892,7 +908,7 @@ img {
         margin: 50px 32px;
     }
 
-    #presentationImg .carousel-inner{
+    #presentationImg .carousel-inner {
         margin: 0 24px;
     }
 
@@ -900,7 +916,7 @@ img {
         height: 142px;
     }
 
-     /*============La ferme - nos valeur=======*/
+    /*============La ferme - nos valeur=======*/
 
 
     .valeur h2 {
@@ -942,7 +958,7 @@ img {
 
     }
 
-    .basPage .logoFooter{
+    .basPage .logoFooter {
         width: 60%;
     }
 
@@ -975,7 +991,7 @@ img {
 
     /*=================GENERALE==============*/
 
-    body{
+    body {
         max-width: 320px;
         width: 100%;
         max-width: 320px;
@@ -986,34 +1002,30 @@ img {
     header {
         height: 380px;
     }
-    
 
-    .contenaire {
-        width: 100%;
-        max-width: 320px;
-        padding: 0;
-        contain: content;
-    }
 
     #menuBurger {
-        margin-right: 122px;
+        width: 236px;
+        height: 418px;
+        position: relative;
+        top: -797px;
+        right: -25px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        border-radius: 0 0 15px 15px;
     }
 
-    #menuBurger #cross{
-        margin-top: 50px;
-
-    }
 
     .burger {
-        margin-left: 258px;
+        margin-left: 80%;
     }
 
-    
+
     .endMain i {
         margin-left: 258px;
     }
 
-    #image{
+    #image {
         display: none;
     }
 
@@ -1037,7 +1049,7 @@ img {
 
     }
 
-    .basPage .logoFooter{
+    .basPage .logoFooter {
         width: 60%;
     }
 
@@ -1062,7 +1074,7 @@ img {
         justify-content: center;
     }
 
-    
+
 
     /*-------------MAIN La ferme------------*/
 
@@ -1080,7 +1092,7 @@ img {
         margin: 4px;
     }
 
-    #presentation{
+    #presentation {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1089,13 +1101,13 @@ img {
         margin: 32px 16px;
     }
 
-    #services h2{
+    #services h2 {
         margin-top: 16px;
         margin-bottom: 8px;
 
     }
 
-    #presentationImg .carousel-inner{
+    #presentationImg .carousel-inner {
         margin: 0 24px;
     }
 
@@ -1103,7 +1115,7 @@ img {
         height: 100px;
     }
 
-    .carousel-caption h5{
+    .carousel-caption h5 {
         font-size: 1rem;
     }
 
@@ -1111,7 +1123,7 @@ img {
         display: none;
     }
 
-     /*============La ferme - nos valeur=======*/
+    /*============La ferme - nos valeur=======*/
 
 
     .valeur h2 {
@@ -1119,9 +1131,16 @@ img {
         margin-top: 32px;
     }
 
-/*============SERVICES=======*/
+    /*============SERVICES=======*/
+
+    /*============CONTACT=============*/
+
+    .contact .imageFond{
+        display: none;
+    }
 
 
 
 
 }
+
