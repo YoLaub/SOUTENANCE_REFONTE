@@ -258,7 +258,7 @@ img {
     }
 
     .burger {
-        margin-left: 470px;
+        margin-left: 80%;
         font-size: 2.5rem;
     }
 
@@ -302,11 +302,12 @@ img {
         flex-direction: column;
         text-align: center;
         background-color: var(--element);
-        width: 236px;
+        width: 41%;
         height: 388px;
-        position: relative;
-        top: -738px;
-        right: -137px;
+        position: absolute;
+        top: -388px;
+        left: 29%;
+        transform: translateX(2%);
         font-size: 1.8rem;
         font-weight: bold;
         border-radius: 0 0 15px 15px;
@@ -769,14 +770,7 @@ img {
     }
 
     #menuBurger {
-        width: 236px;
-        height: 388px;
-        position: relative;
-        top: -738px;
-        right: -79px;
-        font-size: 1.8rem;
-        font-weight: bold;
-        border-radius: 0 0 15px 15px;
+        width: 168px;
     }
 
     /*==================MENU BURGER===============*/
@@ -1034,15 +1028,9 @@ img {
 
 
     #menuBurger {
-        width: 190px;
-        height: 418px;
-        position: relative;
-        top: -797px;
-        right: -57px;
-        font-size: 1.8rem;
-        font-weight: bold;
-        border-radius: 0 0 15px 15px;
+        left: 23%;
     }
+
 
 
     .burger {
@@ -1167,6 +1155,12 @@ img {
     .contact .imageFond{
         display: none;
     }
+
+    /*============ACTUS=============*/
+
+    
+
+
 
 
 
