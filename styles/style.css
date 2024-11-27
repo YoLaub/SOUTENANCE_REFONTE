@@ -86,19 +86,23 @@ ol {
 }
 
 
-/* Styles pour les formulaires */
+/* ==================Styles pour les formulaires=============== */
+
+
 form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
     margin-left: 16px;
     margin-right: 16px;
 }
 
-/*form p:nth-child(1), form p:nth-child(2), form p:nth-child(3), form p:nth-child(4) {
-    width: 70%;
-}*/
 
-form p:nth-child(5){
-    width: 100%;
+
+form p{
+    width: 95%;
 }
 
 label {
@@ -126,7 +130,7 @@ input[type="submit"] {
     width: 100%;
     color: var(--fondPage);
     background-color: var(--fontColor);
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 32px 0px;
     padding: 8px 42px;
@@ -135,6 +139,28 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     transform: scale(1.1);
+}
+
+/*======iframe=========*/
+
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte h2{
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 32px 0;
+}
+
+.carte iframe{
+    width: 90%;
+    height: 300px;
+    border: 1px solid var(--doth);
+    border-radius: 5px;
 }
 
 /* Styles pour les images */
@@ -184,7 +210,8 @@ img {
     /*=============GENERAL============*/
     body {
         padding: 0px;
-        width: 576px;
+        width: 100%;
+        max-width: 576px;
         font-size: 1.1rem;
     }
 
@@ -197,6 +224,10 @@ img {
 
     h1 {
         font-size: 20px;
+    }
+
+    .endMain{
+        margin-top: 40px;
     }
 
     /*===============HEADER===============*/
@@ -275,7 +306,7 @@ img {
         height: 388px;
         position: relative;
         top: -738px;
-        right: -152px;
+        right: -137px;
         font-size: 1.8rem;
         font-weight: bold;
         border-radius: 0 0 15px 15px;
@@ -483,9 +514,8 @@ img {
     }
 
     .endMain img {
-        width: 60%;
-        margin-left: 21%;
-
+        width: 50%;
+        margin-left: 27%;
     }
 
     /*==============carousel services=============*/
@@ -725,7 +755,8 @@ img {
 @media (max-width: 412px) {
 
     body {
-        width: 412px;
+        width: 100%;
+        max-width: 412px;
     }
 
 
@@ -994,9 +1025,7 @@ img {
     body {
         max-width: 320px;
         width: 100%;
-        max-width: 320px;
         padding: 0;
-        contain: content;
     }
 
     header {
@@ -1005,11 +1034,11 @@ img {
 
 
     #menuBurger {
-        width: 236px;
+        width: 190px;
         height: 418px;
         position: relative;
         top: -797px;
-        right: -25px;
+        right: -57px;
         font-size: 1.8rem;
         font-weight: bold;
         border-radius: 0 0 15px 15px;
