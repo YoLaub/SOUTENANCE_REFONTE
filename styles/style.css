@@ -101,7 +101,7 @@ form {
 
 
 
-form p{
+form p {
     width: 95%;
 }
 
@@ -143,20 +143,20 @@ input[type="submit"]:hover {
 
 /*======iframe=========*/
 
-.carte{
+.carte {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.carte h2{
+.carte h2 {
     font-weight: bold;
     font-size: 2rem;
     margin: 32px 0;
 }
 
-.carte iframe{
+.carte iframe {
     width: 90%;
     height: 300px;
     border: 1px solid var(--doth);
@@ -226,7 +226,7 @@ img {
         font-size: 20px;
     }
 
-    .endMain{
+    .endMain {
         margin-top: 40px;
     }
 
@@ -1152,18 +1152,105 @@ img {
 
     /*============CONTACT=============*/
 
-    .contact .imageFond{
+    .contact .imageFond {
         display: none;
     }
 
     /*============ACTUS=============*/
 
-    
 
+    .diary {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
 
+    .diary h3 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 32px;
+    }
 
+    .diary .accordion {
+        width: 90%;
+    }
+
+    .diary .accordion .collapsed {
+        justify-content: center;
+        background-color: #B8776A;
+        font-size: 1.3rem;
+
+    }
+
+    .accordion-button::after {
+        display: none;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: var(--fontColor);
+        color: var(--fondPage);
+        justify-content: center;
+        font-size: 1.3rem;
+    }
+
+    .accordion-collapse {
+        width: 90%;
+        margin: 16px 0;
+    }
+
+    .accordion-collapse .card {
+        margin: 32px 0;
+        text-align: justify;
+    }
+
+    .accordion-collapse h3 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+
+    .card-body img {
+        border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        -moz-border-radius: 5px 5px 0 0;
+        -ms-border-radius: 5px 5px 0 0;
+        -o-border-radius: 5px 5px 0 0;
+    }
+
+    .card-body {
+        padding: 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    .card-body p{
+        padding: 0 16px;
+    }
+
+    .card-body .infoArticle {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 12px;
+        padding: 0 12px;
+        width: 90%;
+        border-bottom: 1px solid var(--fontColor);
+    }
+
+    .card-body i:nth-child(2),
+    .card-body i:nth-child(3) {
+        display: none;
+    }
+
+    .card-body i:nth-child(1),
+    .card-body i:nth-child(4) {}
 
 
 
 }
-
