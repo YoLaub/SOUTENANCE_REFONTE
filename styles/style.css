@@ -70,7 +70,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Styles pour les listes */
@@ -165,6 +165,11 @@ img {
     height: auto;
     display: block;
 }
+/*general*/
+
+.contenaire{
+    padding: 32px 96px 0 96px;
+}
 
 
 
@@ -173,6 +178,7 @@ header {
     background-color: var(--headerFooter);
     height: 100%;
     border-bottom: 4px solid var(--element);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -202,16 +208,11 @@ header {
 }
 
 #menuPrincipale  ul li{
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
-#menuPrincipale  ul li .active{
- 
-    background-color: var(--element);
-    padding: 16px 40px;
-    border-radius: 5px 5px 0 0;
-}
+
 
 /*----------------HAUT-------------*/
 
@@ -221,17 +222,23 @@ header {
     justify-content: space-between;
 }
 
-.hautPage img{
+.hautPage img {
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 80px;
-    width: 30%;
+    margin-top: -85px;
+    margin-bottom: -8px;
+    width: 36%;
+}
+
+.hautPage a{
+    margin: auto;
 }
 
 #info{
     display: flex;
     justify-content: space-between;
-    margin: 16px 32px;
+    margin: 16px auto;
+    width: 80%;
 }
 
 #info .nousTrouver{
@@ -240,35 +247,285 @@ header {
 
 }
 
-#info .telephone{
+#info #telephone{
     display: flex;
     align-items: center;
-    border: 1px solid var(--fontColor);
-    border-radius: 50px;
-    padding: 4px 24px;
+    padding: 4px 11px;
 
 }
 
 #info .nousTrouver i{
-    margin-right: 24px;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+    color: var(--fontColor);
+    
 }
 
-#info .telephone i{
-    margin-right: 24px;
-    font-size: 1.8rem;
+#info #telephone i{
+    font-size: 1.6rem;
+    color: var(--fontColor);
+    cursor: pointer;
 }
 
-#info .telephone p{
-    font-size: 1.3rem;
+#info #telephone p{
+    font-size: 1.2rem;
+}
+
+#contactHeader{
+    display: none;
 }
 
 /*=============================MAIN=====================*/
 
-.ariane{
-    margin-left: 40px;
-    margin-top: 16px;
+.ariane {
+    display: flex;
+    justify-content: center;
+    background-color: var(--element);
+    font-weight: bold;
+    font-size: 1.1rem;
+    width: 118px;
+    padding-bottom: 6px;
+    margin: 0px auto;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.ariane p {
+    margin: 4px;
+}
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 50px 32px;
+}
+
+#presentation h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+#presentation p {
+    font-size: 1.2rem;
+}
+
+
+
+.sketch{
+    width: 40%;
+    opacity: 0.8;
+    margin: auto;
+    
+}
+
+.line{
+    border-top: 4px solid var(--element);
+    width: 60%;
+    margin: 80px auto 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/*=======SERVICES=====*/
+
+.fond{
+   position: absolute;
+   width: 80%;
+   z-index: -1;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+#services h2 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 64px;
+    margin-top: 64px;
+}
+
+  /*============carte services==============*/
+
+
+  #services .servicesCard {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 10%;
+    width: auto;
+    background-color: var(--carte);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#services .servicesCard h3,
+#services .servicesCard .serviceInfo {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+#services .servicesCard h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+
+#services .servicesCard .bouton {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--fondPage);
+    background-color: var(--fontColor);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 32px 32px;
+    padding: 8px 0;
+
+}
+
+#services .servicesCard img {
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+.bouton a h3 {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    color: var(--fondPage);
+    background-color: var(--fontColor);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 60px 100px;
+    padding: 16px 0;
+}
+
+.bouton h3 {
+    margin: 0;
+}
+
+
+#information1 .tarif,
+#information2 .tarif,
+#information3 .tarif,
+#information4 .tarif {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--fontColor);
+    padding-top: 32px;
+
+}
+
+#information1 i,
+#information2 i,
+#information3 i,
+#information4 i {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--fontColor);
+    margin-right: 16px;
+
+
+}
+
+#information1 p,
+#information2 p,
+#information3 p,
+#information4 p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#information1 .detail,
+#information2 .detail,
+#information3 .detail,
+#information4 .detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sketch {
+    width: 60%;
+    margin-bottom: -16px;
+    margin-left: 22.5%;
+
+}
+
+.card-body {
+    background-color: var(--carte);
+    border: none;
+}
+
+
+/*============FIN DU MENU===============*/
+
+
+.endMain i {
+    font-size: 2.3rem;
+    margin-left: 85%;
+}
+
+.endMain img {
+    width: 50%;
+    margin-left: 27%;
+}
+
+/*==============carousel services=============*/
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.carousel-control-prev {
+    left: 32px;
+}
+
+.carousel-control-next {
+    right: 50px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    top: 0px;
+}
+
+
+
+.carousel-control-prev-icon {
+    background-image: none;
+
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+    display: none;
+
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+
+
+
 
 
 /*===================courousel services===============*/
@@ -368,6 +625,70 @@ header {
 }
 
 
+footer {
+    background-color: var(--headerFooter);
+
+}
+
+.basPage {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.basPage img {
+    width: 30%;
+    height: 30%;
+    margin-top: 0px;
+}
+
+.basPage .nousTrouver {
+    text-align: center;
+    font-size: 0.8rem;
+    width: 30%;
+}
+
+.basPage .nousTrouver i {
+    font-size: 1.3rem;
+}
+
+.basPage .nousTrouver h3 {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.basPage .partenaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 30%;
+}
+
+
+.basPage .partenaire h3 {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+}
+
+#mentions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+#mentions a:nth-child(1) {
+    margin-right: 12px;
+}
+
+
+
 
 
 
@@ -454,7 +775,7 @@ header {
         font-size: 1.5rem;
     }
 
-    .hautPage .telephone {
+    .hautPage #telephone {
         font-size: 1.5rem;
     }
 
