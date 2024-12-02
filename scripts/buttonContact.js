@@ -1,3 +1,5 @@
+const screen = window.matchMedia("(max-width: 768px");
+
 document.getElementById("iconeHeader")
     .addEventListener("click", function () {
 
