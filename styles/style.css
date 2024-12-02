@@ -360,8 +360,10 @@ header {
 #services .servicesCard {
     display: flex;
     flex-direction: column;
-    margin: 8px 10%;
-    width: auto;
+    justify-content: space-between;
+    margin: 8px 3%;
+    width: 300px;
+    height: 565px;
     background-color: var(--carte);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -395,6 +397,22 @@ header {
 #services .servicesCard img {
     border-radius: 0px 0px 15px 15px;
 
+}
+
+.carousel-indicators {
+
+    bottom: -50px;
+
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: var(--fontColor);
+}
+
+.carousel-control-prev-icon i, .carousel-control-next-icon i {
+    display: block;
+    color: var(--fontColor);
+    font-size: 3rem;
 }
 
 .bouton a h3 {
@@ -498,16 +516,16 @@ header {
 
 
 .carousel-control-prev {
-    left: 32px;
+    left: 130px;
 }
 
 .carousel-control-next {
-    right: 50px;
+    right: 140px;
 }
 
 .carousel-control-next,
 .carousel-control-prev {
-    top: 0px;
+    top: 42px;
 }
 
 
@@ -517,27 +535,21 @@ header {
 
 }
 
-.carousel-control-prev-icon i,
-.carousel-control-next-icon i {
-    display: none;
-
-}
 
 .carousel-control-next-icon {
     background-image: none;
 }
 
+/*================ENDMAIN===================*/
 
+.endMain{
+    margin-top: 32px;
+}
 
+.endMain .bouton{
+    margin: 0px 320px;
+    padding-top: 64px;
 
-
-
-/*===================courousel services===============*/
-
-
-.carousel-control-next,
-.carousel-control-prev {
-    top: 175px;
 }
 
 
