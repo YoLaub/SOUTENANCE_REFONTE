@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <a href="index.html"><img src="images/Element/logo.png" alt="logo" class="img-fluid"></a>
+            <a href="index.html"><img src="images/Element/logo.png" alt="logo" class="img-fluid" id="logo"></a>
         </section>
 
         <nav id="menuPrincipale">
@@ -88,6 +88,16 @@
 
     <main class="container">
 
+        <aside id="shareDesktop">
+
+            <i class="bi bi-share-fill share"></i>
+            <div id="network">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </aside>
+
         <div class="ariane">
             <p>Services</p>
         </div>
@@ -102,6 +112,8 @@
                 pleinement dans la vie à la ferme. Pour en savoir plus sur nos offres et réserver votre expérience,
                 rendez-vous sur une des cartes ci-dessous. Nous sommes impatients de vous accueillir et de partager avec
                 vous notre passion pour l'agriculture et la nature.</p>
+
+                <img src="images/fond2.jpeg" alt="sketch kawaï" class="sketch">
 
             <h2>Nos Services</h2>
 
@@ -119,7 +131,7 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <article class="servicesCard ">
+                        <article class="servicesCard full">
                             <h3>La ferme pédagogique</h3>
                             <p class="serviceInfo">Notre service de ferme pédagogique est conçu pour offrir une
                                 expérience immersive et éducative à tous nos visiteurs. Que vous soyez une école, un
@@ -162,7 +174,7 @@
 
                     </div>
                     <div class="carousel-item">
-                        <article class="servicesCard">
+                        <article class="servicesCard full">
                             <h3>Nos écuries</h3>
                             <p class="serviceInfo">Notre service de ferme pédagogique est conçu pour offrir une
                                 expérience immersive et éducative à tous nos visiteurs. Que vous soyez une école, un
@@ -204,7 +216,7 @@
                             <img src="images/STABLE.jpg" alt="Nos écurie">
                     </div>
                     <div class="carousel-item">
-                        <article class="servicesCard">
+                        <article class="servicesCard full">
                             <h3>Nos ballades</h3>
                             <p class="serviceInfo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                                 officiis accusamus est
@@ -235,7 +247,7 @@
                         </article>
                     </div>
                     <div class="carousel-item">
-                        <article class="servicesCard">
+                        <article class="servicesCard full">
                             <h3>La location de salle</h3>
                             <p class="serviceInfo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                                 officiis accusamus est
@@ -269,12 +281,14 @@
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="images/Element/fleche-gauche.png" alt="" class="prevNext"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselServices"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                        <img src="images/Element/fleche-gauche.png" alt="" class="prevNext">
+                    </span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -287,7 +301,10 @@
                     <h3>Contacter-nous !</h3>
                 </a>
             </div>
-            <a href="#menu-icon"><i class="bi bi-caret-up-square-fill"></i></a>
+            <a href="#logo" class="up">
+                <i class="bi bi-caret-up-square-fill"></i>
+                <p>Haut de page</p>
+            </a>
             <img src="images/sketch_cow_accueil.jpeg" alt="dessin d'une vache" class="img-fluid">
         </section>
 
@@ -295,7 +312,7 @@
 
 
 
-    <footer class="container">
+    <footer class="contenair">
         <section class="basPage">
             <a class="partenaire" href="#">
                 <h3>Notre partenaire</h3>
@@ -318,6 +335,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/reseau.js"></script>
 
 </body>
 
