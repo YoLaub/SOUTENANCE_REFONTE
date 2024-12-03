@@ -172,7 +172,6 @@ img {
     padding: 32px 96px 0 96px;
 }
 
-/*reseau*/
 
 
 
@@ -196,7 +195,7 @@ header {
     border-radius: 15px;
 }
 
-
+/*=========================================================*/
 /*menu*/
 
 #menu-icon {
@@ -217,10 +216,7 @@ header {
     font-size: 1.1rem;
     font-weight: bold;
 }
-
-
-
-/*----------------HAUT-------------*/
+/*=========================================================*/
 
 .hautPage {
     display: flex;
@@ -279,7 +275,7 @@ header {
 #contactHeader {
     display: none;
 }
-
+/*=========================================================*/
 /*=============================MAIN=====================*/
 
 .ariane {
@@ -356,7 +352,7 @@ header {
 cursor: pointer;
 }
 
-
+/*=========================================================*/
 /*=======SERVICES=====*/
 
 .fond {
@@ -372,7 +368,7 @@ cursor: pointer;
     margin-bottom: 64px;
     margin-top: 64px;
 }
-
+/*=========================================================*/
 /*============carte services==============*/
 
 .phoneVersion {
@@ -455,7 +451,7 @@ cursor: pointer;
     text-align: center;
 }
 
-
+/*=========================================================*/
 /*================ICON AROUSEL==============*/
 
 
@@ -514,7 +510,7 @@ cursor: pointer;
     width: 6rem;
     height: 6rem;
 }
-
+/*=========================================================*/
 /*==============INDICATOR===========*/
 
 .carousel-indicators {
@@ -595,38 +591,104 @@ cursor: pointer;
 
 
 
-/*================ENDMAIN===================*/
+/*=========================================================*/
 
-.endMain {
-    margin-top: 32px;
-}
+   /*-------------MAIN La ferme------------*/
 
-.endMain .bouton {
-    margin: 0px 32%;
-    padding-top: 64px;
-}
+    /*============La ferme-carousel========*/
 
-.endMain .up{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .d-md-block {
+        display: block ;
+    }
 
-.endMain .up p{
-    font-weight: bold;
-}
+    .carousel-caption {
+        background-color: var(--element);
+        opacity: 0.9;
+        position: absolute;
+        right: 15%;
+        border-radius: 15px 15px 0 0;
+        bottom: 0;
+        height: auto;
+        left: 15%;
+        padding-top: 1.25rem;
+        padding-bottom: 0rem;
+        color: #fff;
+        text-align: center;
+    }
 
-.endMain i {
-    font-size: 2.3rem;
-}
+    .carousel-indicators {
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-right: 15%;
+        margin-bottom: 0.5rem;
+        margin-left: 15%;
+    }
 
-.endMain img {
-    width: 32%;
-    margin: 0 auto;
-}
+    .carousel {
+        position: relative;
+
+    }
+
+    .carousel h5 {
+        margin-bottom: 0px;
+    }
+
+    .carousel p {
+        font-size: 1.1rem;
+        padding: 0px 16px 16px 16px;
+    }
+
+    #presentationImg{
+        width: 80%;
+    }
 
 
+    #presentationImg .carousel-inner {
+        position: relative;
+        width:80%;
+        overflow: hidden;
+        border-radius: 15px;
+        border: 1px solid rgba(87, 143, 34, 0.425);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
+        margin-bottom: 128px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+
+    /*============La ferme - nos valeur=======*/
+
+    .valeur {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .valeur h2 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 64px;
+    }
+
+    .valeur p {
+        text-align: justify;
+        padding: 0 32px;
+        margin-bottom: 64px;
+    }
+
+    .valeur img {
+        width: 200px;
+    }
+
+/*=========================================================*/
 
 /*===============================ACTUS===============================*/
 
@@ -714,7 +776,40 @@ cursor: pointer;
     width: 90%;
     border-bottom: 1px solid var(--fontColor);
 }
+/*=========================================================*/
+/*================ENDMAIN===================*/
 
+.endMain {
+    margin-top: 32px;
+}
+
+.endMain .bouton {
+    margin: 0px 32%;
+    padding-top: 64px;
+}
+
+.endMain .up{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.endMain .up p{
+    font-weight: bold;
+}
+
+.endMain i {
+    font-size: 2.3rem;
+}
+
+.endMain img {
+    width: 32%;
+    margin: 0 auto;
+}
+
+
+/*=========================================================*/
 
 /*=============FOOTER=======================*/
 
@@ -782,7 +877,7 @@ footer {
 
 
 
-
+/*=========================================================*/
 
 
 @media (max-width: 576px) {
@@ -812,6 +907,10 @@ footer {
 
     .endMain {
         margin-top: 40px;
+    }
+
+    #shareDesktop{
+        display: none;
     }
 
     /*===============HEADER===============*/
@@ -904,7 +1003,7 @@ footer {
         padding: 6px 12px;
         font-size: 12px;
     }
-
+/*=========================================================*/
 
     /*==================MENU BURGER===============*/
 
@@ -933,7 +1032,7 @@ footer {
     #menuBurger #reseau {
         margin-top: 26px;
     }
-
+/*=========================================================*/
 
     /*========================MAIN ACCUEIL==================*/
 
@@ -966,7 +1065,7 @@ footer {
         margin-bottom: 32px;
         text-align: center;
     }
-
+/*=========================================================*/
 
     /*============Slide==============*/
 
@@ -980,7 +1079,7 @@ footer {
     #image img {
         border-radius: 15px;
     }
-
+/*=========================================================*/
     /*============services==============*/
 
     .phoneVersion {
@@ -1002,7 +1101,7 @@ footer {
         margin-bottom: 32px;
         margin-top: 64px;
     }
-
+/*=========================================================*/
     /*==============carousel services=============*/
     .carousel-control-prev {
         left: 32px;
@@ -1102,7 +1201,7 @@ footer {
 
 
 
-
+/*=========================================================*/
 
     /*============carte services==============*/
 
@@ -1223,7 +1322,7 @@ footer {
         border: none;
     }
 
-
+/*=========================================================*/
     /*============FIN DU MENU===============*/
 
 
@@ -1244,29 +1343,15 @@ footer {
 
 
 
-
+/*=========================================================*/
     /*-------------MAIN La ferme------------*/
 
     /*============La ferme-carousel========*/
 
     .d-md-block {
-        display: block !important;
+        display: none;
     }
 
-    .carousel-caption {
-        background-color: var(--element);
-        opacity: 0.9;
-        position: absolute;
-        right: 15%;
-        border-radius: 15px;
-        bottom: -1.75rem;
-        height: 126px;
-        left: 15%;
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
-        color: #fff;
-        text-align: center;
-    }
 
     .carousel-indicators {
         position: absolute;
@@ -1299,14 +1384,19 @@ footer {
 
     #presentationImg .carousel-inner {
         position: relative;
-        width: 90%;
+        width: 100%;
         overflow: hidden;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin-bottom: 32px;
-        margin-left: 5%;
+        margin-left: auto;
         margin-right: auto;
 
+    }
+
+    .carousel-control-next .prevNext,
+    .carousel-control-prev .prevNext{
+        display: none;
     }
 
 
@@ -1323,6 +1413,7 @@ footer {
     .valeur h2 {
         font-size: 2.2rem;
         font-weight: bold;
+        margin-top: 64px;
     }
 
     .valeur p {
