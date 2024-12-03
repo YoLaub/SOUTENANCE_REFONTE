@@ -172,6 +172,11 @@ img {
     padding: 32px 96px 0 96px;
 }
 
+/*reseau*/
+
+
+
+
 
 
 /*==================HEADER=================*/
@@ -278,6 +283,9 @@ header {
 /*=============================MAIN=====================*/
 
 .ariane {
+    position: sticky;
+    top: 0;
+    z-index: 5;
     display: flex;
     justify-content: center;
     background-color: var(--element);
@@ -319,15 +327,33 @@ header {
 .sketch {
     width: 40%;
     opacity: 0.8;
-    margin: auto;
+    margin: 64px auto;
 
 }
 
-.line {
-    border-top: 4px solid var(--element);
-    width: 60%;
-    margin: 80px auto 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+#shareDesktop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    font-size: 2rem;
+    background-color: var(--element);
+    padding: 16px 24px 16px 24px;
+    top: 300px;
+    right: 0;
+    border-radius: 5px;
+    border: 1px solid rgba(22, 10, 10, 0.24);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
+}
+
+#shareDesktop #network{
+    display: none;
+    flex-direction: column;
+}
+
+#shareDesktop .share{
+cursor: pointer;
 }
 
 
@@ -339,13 +365,6 @@ header {
     z-index: -1;
 }
 
-#services {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
 
 #services h2 {
     font-weight: bold;
@@ -356,6 +375,18 @@ header {
 
 /*============carte services==============*/
 
+.phoneVersion {
+    display: none;
+}
+
+.desktopVersion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
 
 #services .servicesCard {
     display: flex;
@@ -363,10 +394,11 @@ header {
     justify-content: space-between;
     margin: 8px 3%;
     width: 300px;
-    height: 565px;
+    height: 650px;
     background-color: var(--carte);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(22, 10, 10, 0.24);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
 }
 
 #services .servicesCard h3,
@@ -379,6 +411,7 @@ header {
     margin-top: 32px;
     margin-bottom: 16px;
     font-weight: bold;
+    height: 10%;
 }
 
 
@@ -399,20 +432,97 @@ header {
 
 }
 
+#services #carouselServices {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+
+
+#services #carouselServices .servicesCard p:nth-child(1) {
+    text-align: center;
+}
+
+#services #carouselServices .servicesCard p:nth-child(2) {
+    text-align: justify;
+    padding: 16px;
+    margin-top: 16px;
+    height: 250px;
+
+}
+
+#services #carouselServices .servicesCard .bouton {
+    text-align: center;
+}
+
+
+/*================ICON AROUSEL==============*/
+
+
+.carousel-control-next {
+    right: -78px;
+    justify-content: flex-end;
+}
+
+.carousel-control-prev {
+    justify-content: flex-start;
+    left: -78px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
+    border: 0;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.carousel-control-prev-icon {
+    background-image: none;
+
+}
+
+
+.carousel-control-next-icon {
+    background-image: none;
+    transform: rotateY(180deg);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+}
+
+/*==============INDICATOR===========*/
+
 .carousel-indicators {
-
     bottom: -50px;
-
 }
 
 .carousel-indicators [data-bs-target] {
     background-color: var(--fontColor);
-}
-
-.carousel-control-prev-icon i, .carousel-control-next-icon i {
-    display: block;
-    color: var(--fontColor);
-    font-size: 3rem;
 }
 
 .bouton a h3 {
@@ -478,79 +588,44 @@ header {
     align-items: center;
     margin-bottom: 16px;
 }
-
-.sketch {
-    width: 60%;
-    margin-bottom: -16px;
-    margin-left: 22.5%;
-
-}
-
 .card-body {
     background-color: var(--carte);
     border: none;
 }
 
 
-/*============FIN DU MENU===============*/
 
+/*================ENDMAIN===================*/
 
-.endMain i {
-    font-size: 2.3rem;
-    margin-left: 85%;
+.endMain {
+    margin-top: 32px;
 }
 
-.endMain img {
-    width: 50%;
-    margin-left: 27%;
+.endMain .bouton {
+    margin: 0px 32%;
+    padding-top: 64px;
 }
 
-/*==============carousel services=============*/
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
+.endMain .up{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-
-.carousel-control-prev {
-    left: 130px;
+.endMain .up p{
+    font-weight: bold;
 }
 
-.carousel-control-next {
-    right: 140px;
+.endMain i {
+    font-size: 2.3rem;
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-    top: 42px;
+.endMain img {
+    width: 32%;
+    margin: 0 auto;
 }
 
-
-
-.carousel-control-prev-icon {
-    background-image: none;
-
-}
-
-
-.carousel-control-next-icon {
-    background-image: none;
-}
-
-/*================ENDMAIN===================*/
-
-.endMain{
-    margin-top: 32px;
-}
-
-.endMain .bouton{
-    margin: 0px 320px;
-    padding-top: 64px;
-
-}
 
 
 /*===============================ACTUS===============================*/
@@ -641,6 +716,9 @@ header {
 }
 
 
+/*=============FOOTER=======================*/
+
+
 footer {
     background-color: var(--headerFooter);
 
@@ -655,19 +733,17 @@ footer {
 }
 
 .basPage img {
-    width: 30%;
-    height: 30%;
+    width: 16%;
     margin-top: 0px;
 }
 
 .basPage .nousTrouver {
     text-align: center;
-    font-size: 0.8rem;
-    width: 30%;
+    width: 40%;
 }
 
 .basPage .nousTrouver i {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 }
 
 .basPage .nousTrouver h3 {
@@ -682,7 +758,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30%;
+    width: 40%;
 }
 
 
@@ -697,6 +773,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     font-size: 0.8rem;
+    padding-bottom: 16px;
 }
 
 #mentions a:nth-child(1) {
@@ -906,13 +983,18 @@ footer {
 
     /*============services==============*/
 
-    #services {
+    .phoneVersion {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-content: center;
         text-align: center;
     }
+
+    .desktopVersion {
+        display: none;
+    }
+
 
     #services h2 {
         font-weight: bold;
@@ -921,15 +1003,117 @@ footer {
         margin-top: 64px;
     }
 
+    /*==============carousel services=============*/
+    .carousel-control-prev {
+        left: 32px;
+    }
+
+    .carousel-control-next {
+        right: 50px;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        top: 0px;
+    }
+
+
+
+    .carousel-control-prev-icon {
+        background-image: none;
+
+    }
+
+    .carousel-control-prev-icon i,
+    .carousel-control-next-icon i {
+        display: none;
+
+    }
+
+    .carousel-control-next-icon {
+        background-image: none;
+    }
+
+    .carousel-item-next,
+    .carousel-item-prev {
+        display: none;
+    }
+
+    .carousel-item.active {
+        display: block;
+    }
+
+
+
+
+    .carousel-control-prev-icon {
+        background-image: none;
+
+    }
+
+
+    .carousel-control-next-icon {
+        background-image: none;
+    }
+
+    .carousel-indicators {
+
+        bottom: -50px;
+
+    }
+
+    .carousel-indicators [data-bs-target] {
+        display: none;
+    }
+
+
+
+    #services #carouselServices {
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    
+
+    #services #carouselServices .servicesCard p {
+        text-align: justify;
+
+    }
+
+    #services #carouselServices .servicesCard .bouton {
+        text-align: center;
+    }
+    
+    #services #carouselServicesPhone {
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+
+    
+
+    #services #carouselServicesPhone .servicesCard p {
+        text-align: justify;
+
+    }
+
+    #services #carouselServicesPhone .servicesCard .bouton {
+        text-align: center;
+    }
+
+
+
+
+
     /*============carte services==============*/
 
 
     #services .servicesCard {
         display: flex;
         flex-direction: column;
-        margin: 8px 10%;
+        margin: 8px auto;
         background-color: var(--carte);
         border-radius: 15px;
+        height: auto;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -1053,35 +1237,9 @@ footer {
         margin-left: 27%;
     }
 
-    /*==============carousel services=============*/
-    .carousel-control-prev {
-        left: 32px;
-    }
-
-    .carousel-control-next {
-        right: 50px;
-    }
-
-    .carousel-control-next,
-    .carousel-control-prev {
-        top: 0px;
-    }
-
-
-
-    .carousel-control-prev-icon {
-        background-image: none;
-
-    }
-
-    .carousel-control-prev-icon i,
-    .carousel-control-next-icon i {
-        display: none;
-
-    }
-
-    .carousel-control-next-icon {
-        background-image: none;
+    .endMain .bouton {
+        margin: 0px auto;
+        padding-top: 0px;
     }
 
 
@@ -1177,38 +1335,14 @@ footer {
         width: 200px;
     }
 
-
-
-
-
-
-
-
-    /*-------------MAIN Nos services------------*/
+    
+    /*-------------MAIN Nos Services------------*/
 
 
     #services .presentation {
         text-align: justify;
         margin: 16px 64px;
     }
-
-
-    #services #carouselServices {
-        margin-top: 16px;
-        margin-bottom: 32px;
-    }
-
-    #services #carouselServices .servicesCard p {
-        text-align: justify;
-
-    }
-
-    #services #carouselServices .servicesCard .bouton {
-        text-align: center;
-    }
-
-
-
 
     /*-------------MAIN Actus------------*/
 
@@ -1411,13 +1545,6 @@ footer {
 
     /*============services==============*/
 
-    #services {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-    }
 
     #services .presentation {
         display: flex;
@@ -1439,7 +1566,7 @@ footer {
     #services .servicesCard {
         display: flex;
         flex-direction: column;
-        margin: 8px 16px;
+        margin: 8px auto;
         background-color: var(--carte);
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

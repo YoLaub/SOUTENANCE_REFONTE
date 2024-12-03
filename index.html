@@ -88,6 +88,16 @@
 
     <main class="container">
 
+        <aside id="shareDesktop">
+
+            <i class="bi bi-share-fill share"></i>
+            <div id="network">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </aside>
+
         <div class="ariane">
             <p>Accueil</p>
         </div>
@@ -100,33 +110,27 @@
                 guidées et ateliers pour tous les âges. Pour plus d'informations ou pour réserver votre visite,
                 n'hésitez pas à nous contacter. Nous serons ravis de partager avec vous notre passion pour l'agriculture
                 et la nature.</p>
-        </section>
 
-        <section class=" container">
 
             <img class="sketch" src="images/sketchOne.jpeg" alt="sketch">
-            <div class="line"></div>
 
         </section>
 
 
-        <section id="services">
+        <section id="services" class="desktopVersion">
             <h2>Nos Services</h2>
-            <!--
-            <img class="fond" src="/images/Element/fondServices.png" alt="fond"> 
-            -->
 
             <div id="carouselServices" class="carousel slide">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="0"
+                        class="active buttonCarousel" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselServices" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="buttonCarousel"></button>
                 </div>
-                
+
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <article class="servicesCard ">
+                        <article class="servicesCard">
                             <h3>La ferme pédagogique</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
                                 ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
@@ -147,7 +151,7 @@
                             </a>
                             <img src="images/STABLE.jpg" alt="Nos écurie" class="img-fluid">
                         </article>
-                        
+
 
 
                     </div>
@@ -177,47 +181,104 @@
                     </div>
 
                 </div>
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselServices"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"><i
-                            class="bi bi-arrow-left-circle-fill"></i></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><img src="images/Element/fleche-gauche.png" alt="Flêche"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselServices"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"><i
-                            class="bi bi-arrow-right-circle-fill"></i></span>
+                    <span class="carousel-control-next-icon" aria-hidden="true"><img src="images/Element/fleche-gauche.png" alt="Flêche"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <section id="services" class="phoneVersion">
+            <h2>Nos Services</h2>
+
+            <div id="carouselServicesPhone" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselServicesPhone" data-bs-slide-to="0"
+                        class="active buttonCarousel" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselServicesPhone" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="buttonCarousel"></button>
+                    <button type="button" data-bs-target="#carouselServicesPhone" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="buttonCarousel"></button>
+                    <button type="button" data-bs-target="#carouselServicesPhone" data-bs-slide-to="3" aria-label="Slide 4"
+                        class="buttonCarousel"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <article class="servicesCard">
+                            <h3>La ferme pédagogique</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
+                                ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
+                                laborum? Veniam, dolorem vel.</p>
+                            <a href="Services.html">
+                                <p class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/ferme_pédagogique.jpg" alt="ferme-pedagogique" class="img-fluid">
+                        </article>
+                    </div>
+                    <div class="carousel-item">
+                        <article class="servicesCard">
+                            <h3>Nos activités</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
+                                ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
+                                laborum? Veniam, dolorem vel.</p>
+                            <a href="Services.html">
+                                <p class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/PONEY.jpg" alt="Les activités" class="img-fluid">
+                        </article>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="servicesCard">
+                            <h3>Nos écuries</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
+                                ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
+                                laborum? Veniam, dolorem vel.</p>
+                            <a href="Services.html">
+                                <p class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/STABLE.jpg" alt="Nos écurie" class="img-fluid">
+                        </article>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="servicesCard">
+                            <h3>La location de salle</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est
+                                ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero
+                                laborum? Veniam, dolorem vel.</p>
+                            <a href="Services.html">
+                                <p class="bouton"> Découvrire !</p>
+                            </a>
+                            <img src="images/RECEPTION.jpg" alt="Nos salle" class="img-fluid">
+                        </article>
+
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselServicesPhone"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselServicesPhone"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-            <!--
-
-            <article class="servicesCard">
-                <h3>La ferme pédagogique</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero laborum? Veniam, dolorem vel.</p>
-                <p class="bouton"> Découvrire !</p>
-                <img src="images/ferme_pédagogique.jpg" alt="ferme-pedagogique">
-            </article>
-            <article class="servicesCard">
-                <h3>Nos écuries</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero laborum? Veniam, dolorem vel.</p>
-                <p class="bouton"> Découvrire !</p>
-                <img src="images/STABLE.jpg" alt="Nos écurie">
-            </article>
-            <article class="servicesCard">
-                <h3>Nos activités</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero laborum? Veniam, dolorem vel.</p>
-                <p class="bouton"> Découvrire !</p>
-                <img src="images/PONEY.jpg" alt="Les activités">
-            </article>
-            <article class="servicesCard">
-                <h3>La location de salle</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam officiis accusamus est ipsum ab? Sequi animi eligendi ad eius quod cumque ipsa! Dolor totam repudiandae libero laborum? Veniam, dolorem vel.</p>
-                <p class="bouton"> Découvrire !</p>
-                <img src="images/RECEPTION.jpg" alt="Nos salle">
-            </article>
-
-            -->
         </section>
 
 
@@ -227,7 +288,10 @@
                     <h3>Contacter-nous !</h3>
                 </a>
             </div>
-            <a href="#menu-icon"><i class="bi bi-caret-up-square-fill"></i></a>
+            <a href="#menu-icon" class="up">
+                <i class="bi bi-caret-up-square-fill"></i>
+                <p>Haut de page</p>
+            </a>
             <img src="images/sketch_cow_accueil.jpeg" alt="dessin d'une vache" class="img-fluid">
         </section>
 
@@ -259,7 +323,7 @@
         crossorigin="anonymous"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/buttonContact.js"></script>
-    <script src="scripts/test.js"></script>
+    <script src="scripts/reseau.js"></script>
 
 </body>
 

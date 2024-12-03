@@ -1,4 +1,4 @@
-const screen = window.matchMedia("(max-width: 768px");
+const screen2 = window.matchMedia("(max-width: 728px");
 
 document.getElementById("iconeHeader")
     .addEventListener("click", function () {
