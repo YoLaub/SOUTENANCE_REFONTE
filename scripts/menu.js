@@ -11,6 +11,7 @@ document.getElementById("menu-icon").addEventListener("click", function () {
         } else {
             menu.style.top = "-388px";
             menu.style.transition = "top 0.6s ease";
+            
         }
     } else {
         if (currentTop <= -300) {
@@ -19,10 +20,12 @@ document.getElementById("menu-icon").addEventListener("click", function () {
         } else {
             menu.style.top = "-388px";
             menu.style.transition = "top 0.6s ease";
+            
         }
     }
 }
 
 );
+
 
 
