@@ -1,7 +1,13 @@
-SERVICE:
+titre plus petit en version mobile
 
-Ballades à Poney
-Reception / Location de salle
-Anniversaire
-Ecurie proprietaire
-Ferme pédagogique
+ne pas justifier les texte
+
+attention au marge qui traine en mobile 
+
+reprendre tout le responsive et verifier si rien n'a bouger
+
+correctif global
+
+ajustement FIGMA
+
+

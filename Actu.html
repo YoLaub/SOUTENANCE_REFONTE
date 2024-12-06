@@ -23,6 +23,7 @@
 
 <body>
   <header class="contenaire">
+    <img id="imageFond" src="images/Header.jpg" alt="fond du header">
     <section class="hautPage ">
       <i id="menu-icon" class="bi bi-list burger"></i>
       <div id="info">
@@ -125,26 +126,28 @@
         <div class="menuDiary">
           <ul>
             <li>
-              <p>Ecurie</p>
+              <p id="stableMenu">Ecurie<i class="bi bi-caret-right-fill" id="stableActive"></i></p>
             </li>
             <li>
-              <p>La Ferme</p>
+              <p id="farmMenu">La Ferme<i class="bi bi-caret-right-fill" id="farmActive"></i></p>
             </li>
             <li>
-              <p>Pédagogie</p>
+              <p id="pedagoMenu">Pédagogie<i class="bi bi-caret-right-fill" id="pedagoActive"></i></p>
             </li>
             <li>
-              <p>Gallerie</p>
+              <p id="gallerieMenu">Gallerie<i class="bi bi-caret-right-fill" id="gallerieActive"></i></p>
             </li>
             <li>
-              <p>Vidéo</p>
+              <p id="videoMenu">Vidéo<i class="bi bi-caret-right-fill" id="videoActive"></i></p>
             </li>
           </ul>
+
+          <img src="images/serviceCow.png" alt="Coucou de Violette">
   
         </div>
   
         <div class="part">
-          <h4>Partenaria</h4>
+          <h4>Partenaire</h4>
           <img src="images/AD.jpeg" alt="Ad">
         </div>
 
@@ -159,20 +162,17 @@
           <img src="images/STABLE_3.jpg" alt="écurie">
           <h3>Nouvelle chambre</h3>
           <div class="infoArticle">
-            <i class="bi bi-calendar-event">05/11/2024</i>
-            <i class="bi bi-eye"> 105</i>
-            <i class="bi bi-hand-thumbs-up">50</i>
-            <i class="bi bi-pencil">John Doe</i>
-          </div>
+            <div>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
+              <i class="bi bi-eye">&nbsp;105</i>
+            </div>
 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
-            eum officiis totam accusamus eaque officia minima unde qui magni itaque veniam fugiat distinctio quibusdam
-            aut, placeat repellendus tempora ratione voluptatibus expedita quod, at quidem earum! Corrupti est in
-            aspernatur sint ullam veritatis officia obcaecati explicabo! Eum excepturi vitae maiores similique
-            obcaecati officiis, officia numquam saepe? Quos laborum, esse hic optio quidem eaque in laudantium earum
-            sit, accusantium dolor beatae sunt aliquid sequi distinctio odit a deserunt soluta repellat ea aut
-            possimus veritatis, amet saepe! Omnis laboriosam mollitia consequatur, quibusdam eos impedit provident
-            suscipit aut voluptatem?</p>
+            <div>
+              <i class="bi bi-hand-thumbs-up">&nbsp;50</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
+            </div>
+            
+          </div>
         </div>
 
         <!-- ========ECURIE=======-->
@@ -182,10 +182,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -195,10 +195,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -208,10 +208,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -221,10 +221,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -241,12 +241,12 @@
       <section id="farmPage">
         <div class="firstArticle">
           <img src="images/STABLE_3.jpg" alt="écurie">
-          <h3>Nouvelle chambre</h3>
+          <h3>Humidité - Mildiou</h3>
           <div class="infoArticle">
-            <i class="bi bi-calendar-event">05/11/2024</i>
+            <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
             <i class="bi bi-eye"> 105</i>
             <i class="bi bi-hand-thumbs-up">50</i>
-            <i class="bi bi-pencil">John Doe</i>
+            <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
           </div>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -265,10 +265,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -278,10 +278,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -291,10 +291,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -304,10 +304,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -327,12 +327,12 @@
 
         <div class="firstArticle">
           <img src="images/STABLE_3.jpg" alt="écurie">
-          <h3>Nouvelle chambre</h3>
+          <h3>Nos amies les poules</h3>
           <div class="infoArticle">
-            <i class="bi bi-calendar-event">05/11/2024</i>
+            <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
             <i class="bi bi-eye"> 105</i>
             <i class="bi bi-hand-thumbs-up">50</i>
-            <i class="bi bi-pencil">John Doe</i>
+            <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
           </div>
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -345,10 +345,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -358,10 +358,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -371,10 +371,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -384,10 +384,10 @@
             <img src="images/STABLE_3.jpg" alt="écurie">
             <h3>Nouvelle chambre</h3>
             <div class="infoArticle">
-              <i class="bi bi-calendar-event">05/11/2024</i>
+              <i class="bi bi-calendar-event">&nbsp;&nbsp;05/11/2024</i>
               <i class="bi bi-eye"> 105</i>
               <i class="bi bi-hand-thumbs-up">50</i>
-              <i class="bi bi-pencil">John Doe</i>
+              <i class="bi bi-pencil">&nbsp;&nbsp;John Doe</i>
             </div>
 
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, rerum quos. Omnis error dolorum
@@ -421,21 +421,21 @@
       <section class="cardList" id="videoPage">
 
         <div class="articleVideo">
-          <h3>La Ferme du Moulin de Bois durant le confinement</h3>
+          
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/Yn3ENt049Yc?si=jAgrA6creyrT2h4j"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="articleVideo">
-          <h3>La Ferme du Moulin de Bois durant le confinement</h3>
+          
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/Yn3ENt049Yc?si=jAgrA6creyrT2h4j"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="articleVideo">
-          <h3>La Ferme du Moulin de Bois durant le confinement</h3>
+          
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/Yn3ENt049Yc?si=jAgrA6creyrT2h4j"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -717,7 +717,10 @@
           <h3>Contacter-nous !</h3>
         </a>
       </div>
-      <a href="#menu-icon"><i class="bi bi-caret-up-square-fill"></i></a>
+      <a href="#logo" class="up">
+        <i class="bi bi-caret-up-square-fill"></i>
+        <p>Haut de page</p>
+    </a>
       <img src="images/sketch_cow_actus.jpeg" alt="dessin d'une vache" class="img-fluid">
     </section>
 
@@ -750,6 +753,7 @@
   <script src="scripts/menu.js"></script>
   <script src="scripts/menuTwo.js"></script>
   <script src="scripts/reseau.js"></script>
+  <script src="scripts/Diary.js"></script>
   <script src="scripts/accordionControl.js"></script>
 </body>
 
