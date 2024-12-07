@@ -23,6 +23,15 @@
 
 <body>
     <header class="contenaire">
+        <img id="imageFond" src="images/Header.jpg" alt="fond du header">
+        <aside id="shareDesktop">
+            <i class="bi bi-share-fill share"></i>
+            <div id="network">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+        </aside>
         <section class="hautPage ">
             <i id="menu-icon" class="bi bi-list burger"></i>
             <div id="info">
@@ -36,7 +45,7 @@
                 </div>
             </div>
 
-            <a href="index.html"><img src="images/Element/logo.png" alt="logo" class="img-fluid"></a>
+            <a href="index.html"><img src="images/Element/logo.png" alt="logo" class="img-fluid" id="logo"></a>
         </section>
 
         <nav id="menuPrincipale">
@@ -93,11 +102,8 @@
             <p>Contact</p>
         </div>
 
-        <img src="images/Default_Generate_a_sketch_of_a_horse_with_no_background_focusi_2_9de0fbe9-a9ad-4404-a9f7-f78517dda7b3_0.png"
-            alt="dessin de cheval" class="imageFond">
-
         <section id="presentation">
-            <h2>Contactez-nous !</h2>
+            <h3>Contactez-nous !</h3>
             <p>Vous avez des questions sur nos services, besoin de conseils pour votre cheval ou toute autre information
                 concernant notre domaine ? N'hésitez pas à nous écrire via le formulaire de contact ci-dessous !</p>
 
@@ -106,20 +112,16 @@
         <section id="formulaire">
             <form action="envoimail.PHP" method="get">
                 <p>
-                    <label for="nom"> Nom :</label>
-                    <input type="text" name="nom" id="nom">
+                    <input type="text" name="nom" id="nom" placeholder="Nom :">
                 </p>
                 <p>
-                    <label for="prenom"> Prénom :</label>
-                    <input type="text" name="prenom" id="prenom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom :">
                 </p>
                 <p>
-                    <label for="tel"> Portable :</label>
-                    <input type="number" name="numéro" id="tel">
+                    <input type="tel" name="tel" id="tel" placeholder="Portable :">
                 </p>
                 <p>
-                    <label for="email"> E-mail :</label>
-                    <input type="email" name="email" id="tel">
+                    <input type="email" name="email" id="email" placeholder="E-mail :">
                 </p>
 
                 <p>
@@ -130,19 +132,21 @@
 
                 <p><input type="submit" value="Envoyer"></p>
             </form>
-        </section>
 
-        <section class="carte">
-            <h2>Nous trouver</h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10673.403233041867!2d-1.7144257122535704!3d48.02625089042013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f1f77bd022159%3A0x2330dcfddcd47753!2sLE%20MOULIN%20DU%20BOIS!5e0!3m2!1sfr!2sfr!4v1732721531354!5m2!1sfr!2sfr"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="carte">
+                <i class="bi bi-geo-alt-fill"></i>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10673.403233041867!2d-1.7144257122535704!3d48.02625089042013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480f1f77bd022159%3A0x2330dcfddcd47753!2sLE%20MOULIN%20DU%20BOIS!5e0!3m2!1sfr!2sfr!4v1732721531354!5m2!1sfr!2sfr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <section class="contenaire endMain">
 
-
-            <a href="#menu-icon"><i class="bi bi-caret-up-square-fill"></i></a>
+            <a href="#logo" class="up">
+                <i class="bi bi-caret-up-square-fill"></i>
+                <p>Haut de page</p>
+            </a>
             <img src="images/sketch_cow_contact.jpeg" alt="dessin d'une vache" class="img-fluid">
         </section>
 
@@ -172,7 +176,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="scripts/menu.js"></script>
+        <script src="scripts/menu.js"></script>
+        <script src="scripts/menuTwo.js"></script>
+        <script src="scripts/reseau.js"></script>
+        <script src="scripts/buttonContact.js"></script>
 
 </body>
 

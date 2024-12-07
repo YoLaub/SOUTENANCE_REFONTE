@@ -96,9 +96,11 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    padding-top: 92px;
+    margin-bottom: 24px;
     margin-left: 16px;
     margin-right: 16px;
+    width: 60%;
 }
 
 
@@ -115,7 +117,7 @@ label {
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
+input[type="tel"],
 input[type="password"],
 textarea {
     width: 100%;
@@ -129,12 +131,12 @@ textarea {
 input[type="submit"] {
     font-size: 1.2rem;
     font-weight: bold;
-    width: 100%;
+    width: auto;
     color: var(--fondPage);
     background-color: var(--fontColor);
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 32px 0px;
+    margin: 32px auto;
     padding: 8px 42px;
     cursor: pointer;
 }
@@ -150,17 +152,17 @@ input[type="submit"]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 30%;
 }
 
-.carte h2 {
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 32px 0;
+.carte i {
+    font-size: 3.4rem;
+    margin-bottom: 8px;
 }
 
 .carte iframe {
     width: 90%;
-    height: 300px;
+    height: 100%;
     border: 1px solid var(--doth);
     border-radius: 5px;
 }
@@ -176,6 +178,12 @@ img {
 
 .contenaire {
     padding: 32px 96px 0 96px;
+}
+
+/*video*/
+
+.articleVideo iframe{
+    height: 100%;
 }
 
 
@@ -201,14 +209,14 @@ header {
     border-radius: 15px;
 }
 
-#imageFond{
+#imageFond {
     z-index: -4;
     opacity: 0.4;
     object-fit: cover;
     position: absolute;
     top: -92px;
     left: 0;
-    width:100% ;
+    width: 100%;
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
@@ -235,9 +243,9 @@ header {
     font-weight: bold;
 }
 
-#menuPrincipale ul li:hover{
+#menuPrincipale ul li:hover {
     scale: 1.2;
-    
+
 }
 
 
@@ -353,7 +361,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
+    text-align: center;
     margin: 50px 32px;
 }
 
@@ -479,6 +487,7 @@ header {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 32px auto;
     padding: 8px 10%;
+    max-width: 240px;
 
 }
 
@@ -499,7 +508,7 @@ header {
 }
 
 #services #carouselServices .servicesCard p:nth-child(2) {
-    text-align: justify;
+    text-align: center;
 
 }
 
@@ -745,7 +754,7 @@ header {
 }
 
 .valeur p {
-    text-align: justify;
+    text-align: center;
     padding: 0 32px;
     margin-bottom: 64px;
 }
@@ -758,7 +767,7 @@ header {
 /*=============================NOSSERVICES===========================*/
 
 #services .presentation {
-    text-align: justify;
+    text-align: center;
     margin: 128px 32px 64px 32px;
 }
 
@@ -771,22 +780,16 @@ header {
     margin-top: 80px;
 }
 
-.diaryDesktop .blockMenu{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: minmax(300px, auto);
-}
 
 .diaryDesktop .menuDiary {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     grid-column: 1;
-    grid-row: 1;
+    grid-row: 2;
     margin-top: 8px;
-    padding: 32px 0 0 16px;
     font-size: 1.5rem;
-    background-color: var(--element);
+    background-color: #b8776aed;
     border: 1px solid rgba(87, 143, 34, 0.425);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     border-radius: 5px 0 0 0;
@@ -795,19 +798,21 @@ header {
     -ms-border-radius: 5px 0 0 0;
     -o-border-radius: 5px 0 0 0;
 }
-   
+
+
 
 .diaryDesktop .menuDiary ul {
     margin-bottom: 106px;
+    margin-left: 16px;
 
 }
 
 .diaryDesktop .menuDiary p {
-    padding: 32px 0 0 16px;
+    margin: 32px 0 0 16px;
     cursor: pointer;
 }
 
-.diaryDesktop .menuDiary p:hover{
+.diaryDesktop .menuDiary p:hover {
 
     display: flex;
     scale: 1.1;
@@ -815,9 +820,13 @@ header {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.diaryDesktop .menuDiary img {
-    margin: 16px auto 0px auto;
-    width: 100%;
+
+.diaryDesktop .menuDiary .fondMenu {
+    height: 100%;
+    object-fit: cover;
+    margin: 0 0 0 0;
+    z-index: -1;
+    filter: blur(1px);
 }
 
 
@@ -831,21 +840,21 @@ header {
 
 }
 
-.diaryDesktop .part{
+.diaryDesktop .part {
     grid-column: 1;
     grid-row: 2;
     margin-top: 32px;
 
 }
 
-.diaryDesktop .part h4{
+.diaryDesktop .part h4 {
     font-size: 1.4rem;
     text-align: center;
     font-weight: bold;
 
 }
 
-.diaryDesktop .part img{
+.diaryDesktop .part img {
     margin: 32px auto 0 auto;
     width: 160px;
     height: 80%;
@@ -897,10 +906,10 @@ header {
     padding-bottom: 16px;
     padding-top: 8px;
     border-top: 1px solid var(--fontColor);
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.diaryDesktop .firstArticle .infoArticle i{
+.diaryDesktop .firstArticle .infoArticle i {
     margin: 0 16px 0 16px;
 }
 
@@ -911,20 +920,20 @@ header {
     grid-auto-rows: minmax(50px, 430px);
 }
 
-.diaryDesktop #galleriePage{
+.diaryDesktop #galleriePage {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(150px, 314px);
 }
 
-.diaryDesktop .cardList .articleGallerie{
-    
+.diaryDesktop .cardList .articleGallerie {
+
     margin: 16px 16px 16px 16px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.diaryDesktop .cardList .articleGallerie img{
+.diaryDesktop .cardList .articleGallerie img {
     object-fit: cover;
     height: 100%;
     border-radius: 5px 5px 5px 5px;
@@ -934,13 +943,13 @@ header {
     -o-border-radius: 5px 5px 5px 5px;
 }
 
-.diaryDesktop .cardList .articleVideo{
+.diaryDesktop .cardList .articleVideo {
     margin: 16px 16px 16px 16px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.diaryDesktop .cardList .articleVideo iframe{
+.diaryDesktop .cardList .articleVideo iframe {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -951,7 +960,7 @@ header {
 
 
 
-.diaryDesktop .articleCard{
+.diaryDesktop .articleCard {
     display: flex;
     flex-direction: column;
     margin: 0 16px 16px 16px;
@@ -960,27 +969,27 @@ header {
     background-color: #F8F1F0;
 }
 
-.diaryDesktop .articleCard img{
-    border-radius:  5px 5px 0 0;
+.diaryDesktop .articleCard img {
+    border-radius: 5px 5px 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.diaryDesktop .articleCard .infoArticle i:nth-child(2){
+.diaryDesktop .articleCard .infoArticle i:nth-child(2) {
     display: none;
 }
 
-.diaryDesktop .articleCard .infoArticle i:nth-child(3){
+.diaryDesktop .articleCard .infoArticle i:nth-child(3) {
     display: none;
 }
 
-.diaryDesktop .articleCard h3{
+.diaryDesktop .articleCard h3 {
     padding-left: 16px;
     margin-top: 16px;
     font-size: 1.4rem;
 }
 
-.diaryDesktop .articleCard p{
-    text-align: justify;
+.diaryDesktop .articleCard p {
+    text-align: center;
     margin-top: 16px;
 }
 
@@ -988,16 +997,19 @@ header {
     display: block;
 }
 
-.diaryDesktop #pedagoActive{
+.diaryDesktop #pedagoActive {
     display: none;
 }
-.diaryDesktop #farmActive{
+
+.diaryDesktop #farmActive {
     display: none;
 }
-.diaryDesktop #gallerieActive{
+
+.diaryDesktop #gallerieActive {
     display: none;
 }
-.diaryDesktop #videoActive{
+
+.diaryDesktop #videoActive {
     display: none;
 }
 
@@ -1072,6 +1084,21 @@ header {
     width: 90%;
     border-bottom: 1px solid var(--fontColor);
 }
+
+/*=========================================================*/
+/*================CONTACT===================*/
+
+#presentation h3{
+    font-family: var(--title);
+    font-size: 6rem;
+    margin-bottom: 32px;
+}
+
+#formulaire{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /*=========================================================*/
 /*================ENDMAIN===================*/
@@ -1371,7 +1398,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: justify;
+        text-align: center;
         margin: 50px 32px;
     }
 
@@ -1494,7 +1521,7 @@ footer {
 
 
     #services #carouselServices .servicesCard p {
-        text-align: justify;
+        text-align: center;
 
     }
 
@@ -1510,7 +1537,7 @@ footer {
 
 
     #services #carouselServicesPhone .servicesCard p {
-        text-align: justify;
+        text-align: center;
 
     }
 
@@ -1736,7 +1763,7 @@ footer {
     }
 
     .valeur p {
-        text-align: justify;
+        text-align: center;
         padding: 0 32px;
         margin-bottom: 32px;
     }
@@ -1750,7 +1777,7 @@ footer {
 
 
     #services .presentation {
-        text-align: justify;
+        text-align: center;
         margin-top: 80px;
         margin-bottom: 104px;
 
@@ -1882,7 +1909,7 @@ footer {
 
     .accordion-collapse .card {
         margin: 32px 0;
-        text-align: justify;
+        text-align: center;
     }
 
     .accordion-collapse h3 {
@@ -1968,7 +1995,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: justify;
+        text-align: center;
         margin: 50px 32px;
     }
 
@@ -2100,7 +2127,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: justify;
+        text-align: center;
         margin: 50px 32px;
     }
 
@@ -2224,7 +2251,7 @@ footer {
 
     .accordion-collapse .card {
         margin: 32px 0;
-        text-align: justify;
+        text-align: center;
     }
 
     .accordion-collapse h3 {
@@ -2380,7 +2407,7 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: justify;
+        text-align: center;
         margin: 32px 16px;
     }
 
@@ -2468,7 +2495,7 @@ footer {
 
     .accordion-collapse .card {
         margin: 32px 0;
-        text-align: justify;
+        text-align: center;
     }
 
     .accordion-collapse h3 {
