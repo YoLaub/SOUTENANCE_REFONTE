@@ -1,7 +1,5 @@
 titre plus petit en version mobile
 
-ne pas justifier les texte
-
 attention au marge qui traine en mobile 
 
 reprendre tout le responsive et verifier si rien n'a bouger

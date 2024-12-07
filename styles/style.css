@@ -213,7 +213,7 @@ header {
     z-index: -4;
     opacity: 0.4;
     object-fit: cover;
-    position: absolute;
+    position: fixed;
     top: -92px;
     left: 0;
     width: 100%;
@@ -916,7 +916,7 @@ header {
 
 .diaryDesktop .cardList {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: minmax(50px, 430px);
 }
 
@@ -1484,9 +1484,6 @@ footer {
         display: none;
     }
 
-    .carousel-item.active {
-        display: block;
-    }
 
 
 
@@ -1505,10 +1502,6 @@ footer {
 
         bottom: -50px;
 
-    }
-
-    .carousel-indicators [data-bs-target] {
-        display: none;
     }
 
 
@@ -1672,11 +1665,6 @@ footer {
     /*============FIN DU MENU===============*/
 
 
-    .endMain i {
-        font-size: 2.3rem;
-        margin-left: 85%;
-    }
-
     .endMain img {
         width: 50%;
         margin-left: 27%;
@@ -1702,7 +1690,6 @@ footer {
     .carousel-indicators {
         position: absolute;
         right: 0;
-        bottom: 0;
         left: 0;
         z-index: 2;
         display: flex;
@@ -1786,6 +1773,22 @@ footer {
     /*-------------MAIN Actus------------*/
 
     /*-------------MAIN contact------------*/
+
+    #presentation h3{
+        font-size: 4.5rem;
+    }
+
+    form {
+        width: 95%;
+        padding-top: 0;
+    }
+
+    .carte {
+        width: 100%;
+        height: 480px;
+    }
+
+
 
     /*-------------MAIN Mentions------------*/
 
@@ -1912,7 +1915,19 @@ footer {
         text-align: center;
     }
 
-    .accordion-collapse h3 {
+    .accordion-collapse .articleCard {
+        padding: 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin: 32px 0;
+        text-align: center;
+    
+    }
+
+    .accordion-collapse .articleCard h3 {
         font-size: 1.6rem;
         font-weight: bold;
         text-align: center;
@@ -1920,7 +1935,7 @@ footer {
         margin-bottom: 8px;
     }
 
-    .card-body img {
+    .accordion-collapse .articleCard img {
         border-radius: 5px 5px 0 0;
         -webkit-border-radius: 5px 5px 0 0;
         -moz-border-radius: 5px 5px 0 0;
@@ -1928,21 +1943,20 @@ footer {
         -o-border-radius: 5px 5px 0 0;
     }
 
-    .card-body {
-        padding: 0;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    .accordion-collapse .articleCard {
+        display: flex;
+        flex-direction: column;
+        margin: 0 16px 16px 16px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        background-color: #F8F1F0;
     }
 
-    .card-body p {
+    .accordion-collapse .articleCard p {
         padding: 0 16px;
     }
 
-    .card-body .infoArticle {
+    .accordion-collapse .articleCard .infoArticle {
         display: flex;
         justify-content: space-between;
         margin: 8px 12px;
@@ -2070,11 +2084,6 @@ footer {
     }
 
 
-    .endMain i {
-        font-size: 2.3rem;
-        margin-left: 85%;
-    }
-
     .endMain img {
         width: 60%;
         margin-left: 21%;
@@ -2131,9 +2140,6 @@ footer {
         margin: 50px 32px;
     }
 
-    #presentationImg .carousel-inner {
-        margin: 0 24px;
-    }
 
     .carousel-caption {
         height: 142px;
@@ -2315,10 +2321,6 @@ footer {
         padding: 0;
     }
 
-    header {
-        height: 380px;
-    }
-
 
     #menuBurger {
         left: 23%;
@@ -2328,11 +2330,6 @@ footer {
 
     .burger {
         margin-left: 80%;
-    }
-
-
-    .endMain i {
-        margin-left: 258px;
     }
 
     #image {
@@ -2388,15 +2385,6 @@ footer {
 
     /*-------------MAIN La ferme------------*/
 
-    .ariane {
-        display: flex;
-        justify-content: center;
-        background-color: var(--element);
-        font-weight: bold;
-        font-size: 1.1rem;
-        margin: 0px 35%;
-        border-radius: 0 0 10px 10px;
-    }
 
     .ariane p {
         margin: 4px;
@@ -2417,10 +2405,6 @@ footer {
 
     }
 
-    #presentationImg .carousel-inner {
-        margin: 0 24px;
-    }
-
     .carousel-caption {
         height: 100px;
     }
@@ -2433,6 +2417,15 @@ footer {
         display: none;
     }
 
+    .carousel-control-prev {
+        left: 0px;
+    }
+
+    .carousel-control-next {
+        right: 0px;
+    }
+
+
     /*============La ferme - nos valeur=======*/
 
 
@@ -2443,11 +2436,6 @@ footer {
 
     /*============SERVICES=======*/
 
-    /*============CONTACT=============*/
-
-    .contact .imageFond {
-        display: none;
-    }
 
     /*============ACTUS=============*/
 
