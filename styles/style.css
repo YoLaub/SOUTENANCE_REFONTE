@@ -46,6 +46,14 @@
     box-sizing: border-box;
 }
 
+.contenaireMain {
+    max-width: 1200px;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 /* Styles de base pour le corps de la page */
 body {
     font-family: var(--font);
@@ -61,13 +69,12 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 15px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-/* Styles pour les paragraphes */
-p {
-    margin-bottom: 0px;
-}
 
 /* Styles pour les liens */
 a {
@@ -176,13 +183,13 @@ img {
 
 /*general*/
 
-.contenaire {
+.contenaireHead {
     padding: 32px 96px 0 96px;
 }
 
 /*video*/
 
-.articleVideo iframe{
+.articleVideo iframe {
     height: 100%;
 }
 
@@ -213,16 +220,14 @@ header {
     z-index: -4;
     opacity: 0.4;
     object-fit: cover;
-    position: fixed;
-    top: -92px;
+    position: absolute;
+    top: -127px;
     left: 0;
     width: 100%;
     filter: blur(3px);
     -webkit-filter: blur(3px);
 }
 
-/*=========================================================*/
-/*menu*/
 
 #menu-icon {
     display: none;
@@ -247,9 +252,6 @@ header {
     scale: 1.2;
 
 }
-
-
-/*=========================================================*/
 
 .hautPage {
     display: flex;
@@ -379,9 +381,9 @@ header {
 
 
 .sketch {
-    width: 40%;
+    width: 60%;
     opacity: 0.8;
-    margin: 64px auto;
+    margin: 80px auto 64px auto;
 
 }
 
@@ -413,6 +415,12 @@ header {
 /*=========================================================*/
 /*=======SERVICES=====*/
 
+#services .presentation {
+    text-align: center;
+    margin: 128px 32px 64px 32px;
+}
+
+
 .fond {
     position: absolute;
     width: 80%;
@@ -421,11 +429,9 @@ header {
 
 
 #services h2 {
-    font-weight: bold;
-    font-size: 2.5rem;
     margin-bottom: 64px;
     margin-top: 64px;
-    text-align: center;
+    font-size: 1.6rem;
 }
 
 /*=========================================================*/
@@ -472,7 +478,7 @@ header {
 #services .servicesCard h3 {
     margin-top: 32px;
     margin-bottom: 16px;
-    font-weight: bold;
+    font-size: larger;
     height: 10%;
     text-align: center;
 }
@@ -486,8 +492,8 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 32px auto;
-    padding: 8px 10%;
-    max-width: 240px;
+    padding: 8px 50px;
+    max-width: 250px;
 
 }
 
@@ -503,14 +509,15 @@ header {
 
 
 
-#services #carouselServices .servicesCard p:nth-child(1) {
+#services #carouselServices .servicesCard p {
     text-align: center;
 }
 
-#services #carouselServices .servicesCard p:nth-child(2) {
+#services #carouselServices .servicesCard .collapse p {
     text-align: center;
-
+    margin: 0;
 }
+
 
 .miniSketch {
     width: 40%;
@@ -587,21 +594,16 @@ header {
 /*=========================================================*/
 /*==============INDICATOR===========*/
 
-.carousel-indicators {
-    bottom: -50px;
-}
 
 .carousel-indicators [data-bs-target] {
     background-color: var(--fontColor);
 }
 
 .bouton a h3 {
-
+    color: var(--fondPage);
     font-size: 1.2rem;
-    font-weight: bold;
     text-align: center;
     align-items: center;
-    color: var(--fondPage);
     background-color: var(--fontColor);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -609,9 +611,6 @@ header {
     padding: 16px 0;
 }
 
-.bouton h3 {
-    margin: 0;
-}
 
 
 #information1 .tarif,
@@ -670,8 +669,6 @@ header {
 
 /*-------------MAIN La ferme------------*/
 
-/*============La ferme-carousel========*/
-
 .d-md-block {
     display: block;
 }
@@ -702,6 +699,7 @@ header {
     margin-right: 15%;
     margin-bottom: 0.5rem;
     margin-left: 15%;
+    bottom: -50px;
 }
 
 .carousel {
@@ -737,8 +735,6 @@ header {
 }
 
 
-/*============La ferme - nos valeur=======*/
-
 .valeur {
     display: flex;
     flex-direction: column;
@@ -763,16 +759,14 @@ header {
     width: 200px;
 }
 
-/*=========================================================*/
-/*=============================NOSSERVICES===========================*/
 
-#services .presentation {
-    text-align: center;
-    margin: 128px 32px 64px 32px;
+/*===============================ACTUS===============================*/
+
+.title {
+    font-weight: 400;
 }
 
 
-/*===============================ACTUS===============================*/
 .diaryDesktop {
     display: grid;
     grid-template-columns: 200px 5fr;
@@ -917,13 +911,14 @@ header {
 .diaryDesktop .cardList {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: minmax(50px, 430px);
+    grid-auto-rows: minmax(50px, 480px);
 }
 
 .diaryDesktop #galleriePage {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: minmax(150px, 314px);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    ;
+    grid-auto-rows: minmax(150px, auto);
 }
 
 .diaryDesktop .cardList .articleGallerie {
@@ -972,6 +967,7 @@ header {
 .diaryDesktop .articleCard img {
     border-radius: 5px 5px 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-height: 270px;
 }
 
 .diaryDesktop .articleCard .infoArticle i:nth-child(2) {
@@ -1088,13 +1084,13 @@ header {
 /*=========================================================*/
 /*================CONTACT===================*/
 
-#presentation h3{
+#presentation h3 {
     font-family: var(--title);
     font-size: 6rem;
     margin-bottom: 32px;
 }
 
-#formulaire{
+#formulaire {
     display: flex;
     flex-wrap: wrap;
 }
@@ -1108,8 +1104,11 @@ header {
 }
 
 .endMain .bouton {
-    margin: 0px 32%;
+    margin: 0px auto;
     padding-top: 64px;
+    max-width: 400px;
+    width: auto;
+    min-width: 160px;
 }
 
 .endMain .up {
@@ -1131,6 +1130,55 @@ header {
     width: 32%;
     margin: 0 auto;
 }
+
+
+/*=========================================================*/
+
+/*=============MENTION=======================*/
+
+#mentionsLeg {
+    display: flex;
+    flex-direction: column;
+    margin: 64px 32px 0 32px;
+
+}
+
+#mentionsLeg a{
+    word-wrap: break-word;
+}
+
+#mentionsLeg h1 {
+    font-family: var(--title);
+    font-size: 5rem;
+    font-weight: 400;
+
+}
+
+#mentionsLeg .titleMention {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: end;
+    margin-top: 32px;
+    margin-bottom: 40px;
+    min-width: 240px;
+    width: auto;
+} 
+
+#mentionsLeg .titleMention h3 {
+    min-width: 200px;
+    margin-bottom: 0;
+    width: auto;
+}
+
+
+#mentionsLeg .titleMention img {
+    max-width: 50px;
+    min-width: 30px;
+    width: auto;
+    margin-right: 16px;
+}
+
 
 
 /*=========================================================*/
@@ -1183,7 +1231,7 @@ footer {
 
 .basPage .partenaire h3 {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     margin-bottom: 0px;
 }
 
@@ -1200,8 +1248,8 @@ footer {
 }
 
 
-
-/*=========================================================*/
+/*===============================================================================================================*/
+/*===========================576px==============================*/
 
 
 @media (max-width: 576px) {
@@ -1217,17 +1265,18 @@ footer {
 
     header {
         background-color: var(--headerFooter);
-        height: 176px;
+        height: 200px;
         border-bottom: 4px solid var(--element);
     }
 
-    .contenaire {
+    .contenaireHead {
         padding: 0px 0px 0 0px;
     }
 
-    h1 {
-        font-size: 20px;
+    .contenaireMain {
+        max-width: 576px;
     }
+
 
     .endMain {
         margin-top: 40px;
@@ -1237,6 +1286,18 @@ footer {
         display: none;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.5rem;
+
+    }
+
+
+    /*=========================================================*/
     /*===============HEADER===============*/
 
     #menuPrincipale {
@@ -1288,7 +1349,7 @@ footer {
         margin-right: auto;
         margin-top: -51px;
         margin-bottom: -22px;
-        width: 54%;
+        width: 70%;
     }
 
     #info {
@@ -1318,7 +1379,6 @@ footer {
 
     .hautPage .nousTrouver {
         margin-right: 40px;
-        font-size: 1.1rem;
     }
 
 
@@ -1338,7 +1398,7 @@ footer {
         text-align: center;
         background-color: var(--element);
         width: 41%;
-        height: 388px;
+        height: 355px;
         position: absolute;
         top: -388px;
         left: 29%;
@@ -1348,23 +1408,6 @@ footer {
         border-radius: 0 0 15px 15px;
         z-index: 8;
     }
-
-    #hookMenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    #menuTwo {
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
 
 
     #menuBurger ul {
@@ -1380,33 +1423,12 @@ footer {
     /*========================MAIN ACCUEIL==================*/
 
     .ariane {
-        display: flex;
-        justify-content: center;
-        background-color: var(--element);
-        font-weight: bold;
         font-size: 1.1rem;
-        margin: 0px auto;
-        border-radius: 0 0 10px 10px;
-    }
-
-    .ariane p {
-        margin: 4px;
-    }
-
-    #presentation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 50px 32px;
     }
 
     #presentation h2 {
-        font-size: 1.6rem;
-        font-weight: bold;
+        font-size: 1.5rem;
         margin-bottom: 32px;
-        text-align: center;
     }
 
     /*=========================================================*/
@@ -1441,8 +1463,6 @@ footer {
 
 
     #services h2 {
-        font-weight: bold;
-        font-size: 2.5rem;
         margin-bottom: 32px;
         margin-top: 64px;
     }
@@ -1463,21 +1483,12 @@ footer {
     }
 
 
-
-    .carousel-control-prev-icon {
-        background-image: none;
-
-    }
-
     .carousel-control-prev-icon i,
     .carousel-control-next-icon i {
         display: none;
 
     }
 
-    .carousel-control-next-icon {
-        background-image: none;
-    }
 
     .carousel-item-next,
     .carousel-item-prev {
@@ -1485,30 +1496,8 @@ footer {
     }
 
 
-
-
-
-    .carousel-control-prev-icon {
-        background-image: none;
-
-    }
-
-
-    .carousel-control-next-icon {
-        background-image: none;
-    }
-
-    .carousel-indicators {
-
-        bottom: -50px;
-
-    }
-
-
-
     #services #carouselServices {
-        margin-top: 16px;
-        margin-bottom: 32px;
+        margin: 0 8px;
     }
 
 
@@ -1518,9 +1507,10 @@ footer {
 
     }
 
-    #services #carouselServices .servicesCard .bouton {
-        text-align: center;
+    #services #carouselServices .servicesCard .collapse {
+        padding: 0 16px;
     }
+
 
     #services #carouselServicesPhone {
         margin-top: 16px;
@@ -1531,6 +1521,7 @@ footer {
 
     #services #carouselServicesPhone .servicesCard p {
         text-align: center;
+        font-size: 1rem;
 
     }
 
@@ -1549,117 +1540,32 @@ footer {
         display: flex;
         flex-direction: column;
         margin: 8px auto;
-        background-color: var(--carte);
-        border-radius: 15px;
         height: auto;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    #services .servicesCard h3,
-    #services .servicesCard .serviceInfo {
+    #services .servicesCard h3 {
         margin-left: 24px;
         margin-right: 24px;
     }
 
-    #services .servicesCard h3 {
-        margin-top: 32px;
-        margin-bottom: 16px;
-        font-weight: bold;
-    }
-
 
     #services .servicesCard .bouton {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: var(--fondPage);
-        background-color: var(--fontColor);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 32px 32px;
-        padding: 8px 0;
+        width: auto;
 
     }
 
-    #services .servicesCard img {
-        border-radius: 0px 0px 15px 15px;
-
-    }
 
     .bouton a h3 {
-
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: center;
-        align-items: center;
-        color: var(--fondPage);
-        background-color: var(--fontColor);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin: 60px 100px;
-        padding: 16px 0;
     }
 
-    .bouton h3 {
-        margin: 0;
-    }
-
-
-    #information1 .tarif,
-    #information2 .tarif,
-    #information3 .tarif,
-    #information4 .tarif {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-top: 1px solid var(--fontColor);
-        padding-top: 32px;
-
-    }
-
-    #information1 i,
-    #information2 i,
-    #information3 i,
-    #information4 i {
-        font-size: 1.5rem;
-        font-weight: bolder;
-        color: var(--fontColor);
-        margin-right: 16px;
-
-
-    }
-
-    #information1 p,
-    #information2 p,
-    #information3 p,
-    #information4 p {
-        font-size: 1rem;
-        font-weight: bold;
-        margin: 0;
-    }
-
-    #information1 .detail,
-    #information2 .detail,
-    #information3 .detail,
-    #information4 .detail {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 16px;
-    }
 
     .sketch {
-        width: 60%;
         margin-bottom: -16px;
         margin-left: 22.5%;
 
     }
 
-    .card-body {
-        background-color: var(--carte);
-        border: none;
-    }
 
     /*=========================================================*/
     /*============FIN DU MENU===============*/
@@ -1671,7 +1577,6 @@ footer {
     }
 
     .endMain .bouton {
-        margin: 0px auto;
         padding-top: 0px;
     }
 
@@ -1680,51 +1585,23 @@ footer {
     /*=========================================================*/
     /*-------------MAIN La ferme------------*/
 
-    /*============La ferme-carousel========*/
 
     .d-md-block {
         display: none;
     }
 
 
-    .carousel-indicators {
-        position: absolute;
-        right: 0;
-        left: 0;
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        margin-right: 15%;
-        margin-bottom: 0.5rem;
-        margin-left: 15%;
-    }
-
-    .carousel {
-        position: relative;
-
-    }
-
     .carousel h5 {
         margin-bottom: 3px;
     }
 
     .carousel p {
-        font-size: 1.1rem;
         padding: 16px;
     }
 
 
     #presentationImg .carousel-inner {
-        position: relative;
         width: 100%;
-        overflow: hidden;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin-bottom: 32px;
-        margin-left: auto;
-        margin-right: auto;
-
     }
 
     .carousel-control-next .prevNext,
@@ -1733,48 +1610,27 @@ footer {
     }
 
 
-    /*============La ferme - nos valeur=======*/
-
-    .valeur {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-    }
-
-    .valeur h2 {
-        font-size: 2.2rem;
-        font-weight: bold;
-        margin-top: 64px;
-    }
-
     .valeur p {
-        text-align: center;
-        padding: 0 32px;
         margin-bottom: 32px;
     }
 
-    .valeur img {
-        width: 200px;
-    }
 
+    /*=========================================================*/
 
     /*-------------MAIN Nos Services------------*/
 
 
     #services .presentation {
-        text-align: center;
         margin-top: 80px;
         margin-bottom: 104px;
 
     }
 
-    /*-------------MAIN Actus------------*/
 
+    /*=========================================================*/
     /*-------------MAIN contact------------*/
 
-    #presentation h3{
+    #presentation h3 {
         font-size: 4.5rem;
     }
 
@@ -1790,76 +1646,16 @@ footer {
 
 
 
+    /*=========================================================*/
     /*-------------MAIN Mentions------------*/
 
 
-    /*===============FOOTER============*/
-
-    footer {
-        background-color: var(--headerFooter);
-
-    }
-
-    .basPage {
-        display: flex;
-        flex-direction: row;
-        padding: 32px 16px;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .basPage img {
-        width: 30%;
-        height: 30%;
-        margin-top: 0px;
-    }
-
-    .basPage .nousTrouver {
-        text-align: center;
-        font-size: 0.8rem;
-        width: 30%;
-    }
-
-    .basPage .nousTrouver i {
-        font-size: 1.3rem;
-    }
-
-    .basPage .nousTrouver h3 {
-        font-weight: bold;
-        font-size: 0.9rem;
-        margin-bottom: 8px;
-    }
-
-    .basPage .partenaire {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 30%;
-    }
-
-
-    .basPage .partenaire h3 {
-        font-weight: bold;
-        font-size: 0.9rem;
-        margin-bottom: 0px;
-    }
-
-    #mentions {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-size: 0.8rem;
-    }
-
-    #mentions a:nth-child(1) {
-        margin-right: 12px;
-    }
 
 
 
 
+
+    /*=========================================================*/
     /*=======================ACTUS========================*/
 
     .diaryDesktop {
@@ -1924,7 +1720,7 @@ footer {
         -o-border-radius: 5px;
         margin: 32px 0;
         text-align: center;
-    
+
     }
 
     .accordion-collapse .articleCard h3 {
@@ -1936,12 +1732,9 @@ footer {
     }
 
     .accordion-collapse .articleCard img {
-        border-radius: 5px 5px 0 0;
-        -webkit-border-radius: 5px 5px 0 0;
-        -moz-border-radius: 5px 5px 0 0;
-        -ms-border-radius: 5px 5px 0 0;
-        -o-border-radius: 5px 5px 0 0;
+        border-radius: 5px;
     }
+
 
     .accordion-collapse .articleCard {
         display: flex;
@@ -1952,8 +1745,12 @@ footer {
         background-color: #F8F1F0;
     }
 
+    .accordion-collapse .articleCard iframe {
+        border-radius: 15px;
+    }
+
     .accordion-collapse .articleCard p {
-        padding: 0 16px;
+        padding: 8px 16px;
     }
 
     .accordion-collapse .articleCard .infoArticle {
@@ -1965,17 +1762,74 @@ footer {
         border-bottom: 1px solid var(--fontColor);
     }
 
+    .diaryMobile .articleCard .infoArticle i:nth-child(2) {
+        display: none;
+    }
+
+    .diaryMobile .articleCard .infoArticle i:nth-child(3) {
+        display: none;
+    }
+
+    /*=========================================================*/
+    /*===============MENTION============*/
+
+    #mentionsLeg h1 {
+        font-size: 3rem;
+    }
+
+    #mentionsLeg p{
+        font-size: 0.9rem;
+    }
+
+    
+    /*=========================================================*/
+    /*===============FOOTER============*/
+
+
+
+    .basPage img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .basPage .nousTrouver {
+        font-size: 0.8rem;
+        width: 30%;
+    }
+
+    .basPage .nousTrouver i {
+        font-size: 1.3rem;
+    }
+
+    .basPage .nousTrouver h3 {
+        font-weight: bold;
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .basPage .partenaire {
+        width: 30%;
+    }
+
+    #mentions {
+        font-size: 0.8rem;
+    }
+
+    #mentions a:nth-child(1) {
+        margin-right: 12px;
+    }
+
+
 }
 
 
-
+/*========================================================================*/
 
 /*===================++++412px++++=============*/
 
 @media (max-width: 412px) {
 
     body {
-        width: 100%;
         max-width: 412px;
     }
 
@@ -1985,103 +1839,35 @@ footer {
 
     .burger {
         margin-left: 80%;
-        font-size: 2.5rem;
     }
 
     #menuBurger {
         width: 168px;
     }
 
-    /*==================MENU BURGER===============*/
-
-
-
-
-    /*========================MAIN ACCUEIL==================*/
-    /*============Slide==============*/
-
 
     /*============services==============*/
 
 
     #services .presentation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         margin: 50px 32px;
     }
 
-    #image {
-        display: none;
-    }
+    /*============carte services==============*/
 
-
-    /*============carte==============*/
-
-
-    #services .servicesCard {
-        display: flex;
-        flex-direction: column;
-        margin: 8px auto;
-        background-color: var(--carte);
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    #services .servicesCard h3,
-    #services .servicesCard p {
-        margin-left: 24px;
-        margin-right: 24px;
-    }
-
-    #services .servicesCard h3 {
-        margin-top: 32px;
-        margin-bottom: 16px;
-        font-weight: bold;
-    }
 
     #services .servicesCard p {
         margin-bottom: 16px;
 
     }
 
-
-    #services .servicesCard .bouton {
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: var(--fondPage);
-        background-color: var(--fontColor);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        margin: 32px 32px;
-        padding: 8px 0;
-
-    }
-
-    #services .servicesCard img {
-        border-radius: 0px 0px 15px 15px;
-
-    }
 
     .bouton a h3 {
-
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-align: center;
-        align-items: center;
-        color: var(--fondPage);
-        background-color: var(--fontColor);
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin: 60px 62px;
         padding: 16px 0;
     }
 
-    .bouton h3 {
-        margin: 0;
-    }
+
 
 
     .endMain img {
@@ -2092,23 +1878,7 @@ footer {
 
 
     /*==============carousel services=============*/
-    .carousel-control-prev {
-        left: 32px;
-    }
 
-    .carousel-control-next {
-        right: 50px;
-    }
-
-    .carousel-control-next,
-    .carousel-control-prev {
-        top: 0px;
-    }
-
-    .carousel-control-prev-icon {
-        background-image: none;
-
-    }
 
     .carousel-control-prev-icon i {
         font-size: 3rem;
@@ -2116,36 +1886,21 @@ footer {
 
     }
 
-    .carousel-control-next-icon {
-        background-image: none;
-    }
-
     .carousel-control-next-icon i {
         font-size: 3rem;
         color: var(--fontColor);
     }
 
-
-
+    #services #carouselServices .servicesCard .collapse p {
+        font-size: 0.9rem;
+    }
 
 
     /*-------------MAIN La ferme------------*/
 
-    #presentation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 50px 32px;
-    }
-
-
     .carousel-caption {
         height: 142px;
     }
-
-    /*============La ferme - nos valeur=======*/
 
 
     .valeur h2 {
@@ -2154,35 +1909,16 @@ footer {
     }
 
 
-
-    /*-------------MAIN Nos services------------*/
-
-    /*-------------MAIN Actus------------*/
-
-    /*-------------MAIN contact------------*/
-
-    /*-------------MAIN Mentions------------*/
-
-
     /*===============FOOTER============*/
-
-
 
     .basPage {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         padding: 0px 16px;
-        justify-content: space-between;
     }
 
     .basPage .partenaire {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         width: 100%;
 
     }
@@ -2192,7 +1928,7 @@ footer {
     }
 
     .basPage .partenaire h3 {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
         margin-top: 32px;
     }
 
@@ -2203,7 +1939,6 @@ footer {
 
     .basPage .nousTrouver {
         display: flex;
-        /*flex-direction: column;*/
         flex-direction: row;
         text-align: center;
         margin: 8px 0px;
@@ -2212,82 +1947,20 @@ footer {
         justify-content: center;
     }
 
-    /*==================ACTUS===============*/
-
-    .diaryMobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-    .diaryMobile h3 {
-        font-size: 2rem;
-        font-weight: bold;
+    .basPage .partenaire:nth-child(1) {
+        order: 3;
         margin-bottom: 32px;
     }
 
-    .diaryMobile .accordion {
-        width: 90%;
+    .basPage .logoFooter:nth-child(2) {
+        order: 1;
     }
 
-    .diaryMobile .accordion .collapsed {
-        justify-content: center;
-        background-color: #B8776A;
-        font-size: 1.3rem;
-
+    .basPage .nousTrouver:nth-child(3) {
+        order: 2;
     }
 
-    .accordion-button::after {
-        display: none;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background-color: var(--fontColor);
-        color: var(--fondPage);
-        justify-content: center;
-        font-size: 1.3rem;
-    }
-
-    .accordion-collapse {
-        width: 90%;
-        margin: 16px 0;
-    }
-
-    .accordion-collapse .card {
-        margin: 32px 0;
-        text-align: center;
-    }
-
-    .accordion-collapse h3 {
-        font-size: 1.6rem;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-
-    .card-body img {
-        border-radius: 5px 5px 0 0;
-        -webkit-border-radius: 5px 5px 0 0;
-        -moz-border-radius: 5px 5px 0 0;
-        -ms-border-radius: 5px 5px 0 0;
-        -o-border-radius: 5px 5px 0 0;
-    }
-
-    .card-body {
-        padding: 0;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-    }
-
-    .card-body p {
-        padding: 0 16px;
-    }
+    /*==================ACTUS===============*/
 
     .card-body .infoArticle {
         display: flex;
@@ -2303,13 +1976,12 @@ footer {
         display: none;
     }
 
-
-
-
 }
 
 
-/*========================================================================*/
+/*================================================================================================*/
+
+/*===============================320px=========================================*/
 
 @media (max-width: 320px) {
 
@@ -2317,8 +1989,6 @@ footer {
 
     body {
         max-width: 320px;
-        width: 100%;
-        padding: 0;
     }
 
 
@@ -2326,43 +1996,8 @@ footer {
         left: 23%;
     }
 
-
-
-    .burger {
-        margin-left: 80%;
-    }
-
-    #image {
-        display: none;
-    }
-
-    .basPage {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 16px;
-        justify-content: space-between;
-        border-top: 2px solid var(--element);
-    }
-
-    .basPage .partenaire {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-
-    }
-
-    .basPage .logoFooter {
-        width: 60%;
-    }
-
     .basPage .partenaire h3 {
-        font-size: 1.2rem;
-        margin-top: 32px;
+        margin-top: 0px;
     }
 
     .basPage .partenaire img {
@@ -2370,32 +2005,14 @@ footer {
         margin-top: 8px;
     }
 
-    .basPage .nousTrouver {
-        display: flex;
-        /*flex-direction: column;*/
-        flex-direction: row;
-        text-align: center;
-        margin: 8px 0px;
-        font-size: 0.8rem;
-        width: 100%;
-        justify-content: center;
-    }
-
-
 
     /*-------------MAIN La ferme------------*/
-
 
     .ariane p {
         margin: 4px;
     }
 
     #presentation {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
         margin: 32px 16px;
     }
 
@@ -2425,111 +2042,10 @@ footer {
         right: 0px;
     }
 
-
     /*============La ferme - nos valeur=======*/
-
 
     .valeur h2 {
         font-size: 1.3rem;
-        margin-top: 32px;
     }
-
-    /*============SERVICES=======*/
-
-
-    /*============ACTUS=============*/
-
-
-    .diaryMobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 40px;
-    }
-
-    .diaryMobile h3 {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 32px;
-    }
-
-    .diaryMobile .accordion {
-        width: 90%;
-    }
-
-    .diaryMobile .accordion .collapsed {
-        justify-content: center;
-        background-color: #B8776A;
-        font-size: 1.3rem;
-
-    }
-
-    .accordion-button::after {
-        display: none;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background-color: var(--fontColor);
-        color: var(--fondPage);
-        justify-content: center;
-        font-size: 1.3rem;
-    }
-
-    .accordion-collapse {
-        width: 90%;
-        margin: 16px 0;
-    }
-
-    .accordion-collapse .card {
-        margin: 32px 0;
-        text-align: center;
-    }
-
-    .accordion-collapse h3 {
-        font-size: 1.6rem;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 16px;
-        margin-bottom: 8px;
-    }
-
-    .card-body img {
-        border-radius: 5px 5px 0 0;
-        -webkit-border-radius: 5px 5px 0 0;
-        -moz-border-radius: 5px 5px 0 0;
-        -ms-border-radius: 5px 5px 0 0;
-        -o-border-radius: 5px 5px 0 0;
-    }
-
-    .card-body {
-        padding: 0;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-    }
-
-    .card-body p {
-        padding: 0 16px;
-    }
-
-    .card-body .infoArticle {
-        display: flex;
-        justify-content: space-between;
-        margin: 8px 12px;
-        padding: 0 12px;
-        width: 90%;
-        border-bottom: 1px solid var(--fontColor);
-    }
-
-    .card-body i:nth-child(2),
-    .card-body i:nth-child(3) {
-        display: none;
-    }
-
-
-
 
 }
