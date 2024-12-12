@@ -107,7 +107,7 @@ form {
     margin-bottom: 24px;
     margin-left: 16px;
     margin-right: 16px;
-    width: 60%;
+    width: 50%;
 }
 
 
@@ -118,7 +118,6 @@ form p {
 
 label {
     display: block;
-    margin-bottom: 5px;
     font-weight: bold;
 }
 
@@ -152,6 +151,8 @@ input[type="submit"]:hover {
     transform: scale(1.1);
 }
 
+
+
 /*======iframe=========*/
 
 .carte {
@@ -159,7 +160,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 45%;
 }
 
 .carte i {
@@ -288,8 +289,23 @@ header {
     display: flex;
     align-items: center;
     padding: 4px 11px;
-
 }
+
+#info #telephone:hover {
+    scale: 1.1;
+}
+
+.custom-popover {
+    --bs-popover-max-width: 200px;
+    --bs-popover-header-bg: #382B28;
+    --bs-popover-header-color: var(--bs-white);
+    --bs-popover-body-padding-x: 1rem;
+    --bs-popover-body-padding-y: .5rem;
+  }
+
+  .popover-body{
+    text-align: center;
+  }
 
 #info .nousTrouver i {
     font-size: 1.7rem;
@@ -531,7 +547,7 @@ header {
 }
 
 /*=========================================================*/
-/*================ICON AROUSEL==============*/
+/*================ICON CAROUSEL==============*/
 
 
 .carousel-control-next {
@@ -661,6 +677,28 @@ header {
 .card-body {
     background-color: var(--carte);
     border: none;
+}
+
+/*-------------Avis------------*/
+
+#avis{
+    margin-top: 160px;
+    margin: 160px 32px 0 32px;
+}
+
+#avis .servicesCard .avisClient{
+    text-align: center;
+}
+
+
+#avis h2{
+    font-size: 1.6rem;
+    margin-bottom: 80px;
+}
+
+#avis h3{
+    font-size: 1.1rem;
+    margin-bottom: 40px;
 }
 
 
@@ -1095,6 +1133,28 @@ header {
     flex-wrap: wrap;
 }
 
+#formulaire .g-recaptcha {
+    position: relative;
+    right: 133px;
+}
+
+
+
+
+.privacy {
+    display: flex;
+}
+
+.privacy label {
+    font-size: smaller;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.privacy input[type="radio"] {
+    margin-right: 24px;
+}
+
 
 /*=========================================================*/
 /*================ENDMAIN===================*/
@@ -1143,7 +1203,7 @@ header {
 
 }
 
-#mentionsLeg a{
+#mentionsLeg a {
     word-wrap: break-word;
 }
 
@@ -1163,7 +1223,7 @@ header {
     margin-bottom: 40px;
     min-width: 240px;
     width: auto;
-} 
+}
 
 #mentionsLeg .titleMention h3 {
     min-width: 200px;
@@ -1777,11 +1837,11 @@ footer {
         font-size: 3rem;
     }
 
-    #mentionsLeg p{
+    #mentionsLeg p {
         font-size: 0.9rem;
     }
 
-    
+
     /*=========================================================*/
     /*===============FOOTER============*/
 

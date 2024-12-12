@@ -2,6 +2,7 @@ var stable = document.getElementById("stableMenu");
 var newStable = stable.style;
 var initialStyleStable = newStable ;
 
+//initialisation du style de stable
 stable.style.scale = "1.1";
 stable.style.backgroundColor = "#B8B66A";
 stable.style.borderRadius = "0 5px 5px 0";
@@ -31,7 +32,6 @@ var videoIcon = document.getElementById("videoActive");
 
 farm.addEventListener("click", function () {
   if (farmPage.style.display = "none") {
-    console.log("HEY")
     farmPage.style.display = "block";
     stablePage.style.display = "none";
     pedagoPage.style.display = "none";
@@ -62,7 +62,6 @@ farm.addEventListener("click", function () {
 stable.addEventListener("click", function () {
 
   if (stablePage.style.display = "none") {
-    console.log("HO")
     farmPage.style.display = "none";
     stablePage.style.display = "block";
     pedagoPage.style.display = "none";
@@ -95,7 +94,6 @@ stable.addEventListener("click", function () {
 pedago.addEventListener("click", function () {
 
   if (pedagoPage.style.display = "none") {
-    console.log("HI")
     farmPage.style.display = "none";
     stablePage.style.display = "none";
     pedagoPage.style.display = "block";
@@ -124,7 +122,6 @@ pedago.addEventListener("click", function () {
 gallerie.addEventListener("click", function () {
 
   if (galleriePage.style.display = "none") {
-    console.log("HI")
     farmPage.style.display = "none";
     stablePage.style.display = "none";
     pedagoPage.style.display = "none";
@@ -154,7 +151,6 @@ gallerie.addEventListener("click", function () {
 video.addEventListener("click", function () {
 
   if (videoPage.style.display = "none") {
-    console.log("HU")
     farmPage.style.display = "none";
     stablePage.style.display = "none";
     pedagoPage.style.display = "none";

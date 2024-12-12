@@ -22,7 +22,7 @@
 
 <body>
     <header class="contenaireHead">
-        <img id="imageFond" src="images/Header.jpg" alt="fond du header">
+        <img id="imageFond" src="images/Header.webp" alt="fond du header">
         <aside id="shareDesktop">
             <i class="bi bi-share-fill share"></i>
             <div id="network">
@@ -143,7 +143,14 @@
                         id="message"></textarea>
                 </p>
 
+                <p class="privacy">
+                    <input type="radio" id="userPrivacy" name="contact" value="privacy" />
+                    <label for="userPrivacy">La ferme du Moulin du Bois SAS en tant que responsable de traitement met en œuvre un traitement de données ayant pour finalités la gestion des demandes effectuées via le formulaire contact. Le traitement est basé sur l’intérêt légitime de La ferme du Moulin du Bois SAS. Vos données sont conservées le temps du traitement de la demande en base active, puis 1 an en archivage intermédiaire. Pour en savoir plus sur vos droits et la protection de vos données cliquez ici. En cliquant sur envoyer, vous confirmez avoir lu et compris la politique de protection des données.</label>
+                </p>
+
+                <div class="g-recaptcha" data-sitekey="your_site_key"></div>    
                 <p><input type="submit" value="Envoyer"></p>
+
             </form>
 
             <div class="carte">
@@ -177,6 +184,7 @@
             <div class="nousTrouver">
                 <i class="bi bi-geo-alt-fill"></i>
                 <p>Le Moulin du Bois, 35131 <br>Chartres-de-Bretagne</p>
+                <p>Ouverture: Tout les jours de 10h à 17h</p>
             </div>
         </section>
         <section id="mentions">
@@ -188,11 +196,12 @@
 
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js.map"></script>
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" ></script>
-        <script src="scripts/menu.js"></script>
-        <script src="scripts/menuTwo.js"></script>
-        <script src="scripts/reseau.js"></script>
-        <script src="scripts/buttonContact.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/menuTwo.js"></script>
+    <script src="scripts/reseau.js"></script>
+    <script src="scripts/buttonContact.js"></script>
 
 </body>
 
