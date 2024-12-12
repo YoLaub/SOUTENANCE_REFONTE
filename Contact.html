@@ -39,8 +39,8 @@
 
                 </div>
                 <div id="telephone">
-                    <i id="iconeHeader" class="bi bi-telephone-fill"></i>
-                    <p id="contactHeader">06 48 24 81 30</p>
+                    <a tabindex="0" class="btn btn-lg " role="button"
+                    data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="left" data-bs-title="Appelez-nous !" data-bs-content="06 48 24 81 30"><i id="iconeHeader" class="bi bi-telephone-fill"></i></a>
                 </div>
             </div>
 
@@ -201,7 +201,11 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/menuTwo.js"></script>
     <script src="scripts/reseau.js"></script>
-    <script src="scripts/buttonContact.js"></script>
+
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 
 </body>
 

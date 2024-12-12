@@ -32,8 +32,7 @@
 
                 <div id="telephone">
                     <a tabindex="0" class="btn btn-lg " role="button"
-                    data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="bottom" data-bs-title="Appelez-nous !" data-bs-content="06 48 24 81 30"><i id="iconeHeader" class="bi bi-telephone-fill"></i></a>
-                    <!--<p id="contactHeader">06 48 24 81 30</p>-->
+                    data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="left" data-bs-title="Appelez-nous !" data-bs-content="06 48 24 81 30"><i id="iconeHeader" class="bi bi-telephone-fill"></i></a>
                 </div>
             </div>
 
@@ -341,15 +340,11 @@
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/menu.js"></script>
     <script src="scripts/menuTwo.js"></script>
-    <script src="scripts/buttonContact.js"></script>
     <script src="scripts/reseau.js"></script>
     <script src="scripts/buttonContact.js"></script>
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-        const popover = new bootstrap.Popover('.popover-dismiss', {
-            trigger: 'focus'
-        })
     </script>
 
 </body>

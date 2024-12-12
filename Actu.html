@@ -34,8 +34,10 @@
 
         </div>
         <div id="telephone">
-          <i id="iconeHeader" class="bi bi-telephone-fill"></i>
-          <p id="contactHeader">06 48 24 81 30</p>
+          <a tabindex="0" class="btn btn-lg " role="button" data-bs-custom-class="custom-popover"
+            data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="left"
+            data-bs-title="Appelez-nous !" data-bs-content="06 48 24 81 30"><i id="iconeHeader"
+              class="bi bi-telephone-fill"></i></a>
         </div>
       </div>
 
@@ -123,28 +125,28 @@
     <section class="diaryDesktop">
       <h3 class="title">Farm Diary</h3>
 
-        <div class="menuDiary">
-          <ul>
-            <li>
-              <p id="stableMenu">Ecurie<i class="bi bi-caret-right-fill" id="stableActive"></i></p>
-            </li>
-            <li>
-              <p id="farmMenu">La Ferme<i class="bi bi-caret-right-fill" id="farmActive"></i></p>
-            </li>
-            <li>
-              <p id="pedagoMenu">Pédagogie<i class="bi bi-caret-right-fill" id="pedagoActive"></i></p>
-            </li>
-            <li>
-              <p id="gallerieMenu">Gallerie<i class="bi bi-caret-right-fill" id="gallerieActive"></i></p>
-            </li>
-            <li>
-              <p id="videoMenu">Vidéo<i class="bi bi-caret-right-fill" id="videoActive"></i></p>
-            </li>
-          </ul>
+      <div class="menuDiary">
+        <ul>
+          <li>
+            <p id="stableMenu">Ecurie<i class="bi bi-caret-right-fill" id="stableActive"></i></p>
+          </li>
+          <li>
+            <p id="farmMenu">La Ferme<i class="bi bi-caret-right-fill" id="farmActive"></i></p>
+          </li>
+          <li>
+            <p id="pedagoMenu">Pédagogie<i class="bi bi-caret-right-fill" id="pedagoActive"></i></p>
+          </li>
+          <li>
+            <p id="gallerieMenu">Gallerie<i class="bi bi-caret-right-fill" id="gallerieActive"></i></p>
+          </li>
+          <li>
+            <p id="videoMenu">Vidéo<i class="bi bi-caret-right-fill" id="videoActive"></i></p>
+          </li>
+        </ul>
 
-          <img class="fondMenu" src="images/fondMenu.webp" alt="sketch de ferme">
+        <img class="fondMenu" src="images/fondMenu.webp" alt="sketch de ferme">
 
-        </div>
+      </div>
 
       <!-- ========ARTICLE PRINCIPALE=======-->
 
@@ -667,7 +669,7 @@
             <img src="images/cochon.webp" alt="cochon">
           </div>
         </div>
-        
+
       </div>
 
       <!-- ================VIDEOS==================-->
@@ -735,18 +737,22 @@
 
   <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
   <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js.map"></script>
-  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js" ></script>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
   <script type="text/javascript" src="scripts/lightBox.js"></script>
   <script type="text/javascript" src="scripts/menu.js"></script>
   <script type="text/javascript" src="scripts/menuTwo.js"></script>
   <script type="text/javascript" src="scripts/reseau.js"></script>
   <script type="text/javascript" src="scripts/Diary.js"></script>
-  <script type="text/javascript" src="scripts/buttonContact.js"></script>
   <script type="text/javascript" src="scripts/accordionControl.js"></script>
   <script type="text/javascript" type="text/javascript">
     new SimpleLightbox({ elements: '.imageGallery1 a' });
-</script>
+
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+
+  </script>
+
 
 </body>
 

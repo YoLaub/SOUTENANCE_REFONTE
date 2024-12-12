@@ -44,7 +44,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 
 .contenaireMain {
     max-width: 1200px;
@@ -59,6 +61,7 @@ body {
     font-family: var(--font);
     color: var(--fontColor);
     font-size: 16px;
+    
 }
 
 
@@ -206,6 +209,7 @@ header {
     height: 100%;
     border-bottom: 4px solid var(--element);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 
@@ -275,7 +279,7 @@ header {
 #info {
     display: flex;
     justify-content: space-between;
-    margin: 16px auto;
+    margin: 16px 0;
     width: 80%;
 }
 
@@ -409,14 +413,15 @@ header {
     justify-content: center;
     align-items: center;
     position: fixed;
-    font-size: 2rem;
+    font-size: 1.5rem;
     background-color: var(--element);
-    padding: 16px 24px 16px 24px;
+    padding: 8px 16px 8px 16px;
     top: 300px;
     right: 0;
     border-radius: 5px;
     border: 1px solid rgba(22, 10, 10, 0.24);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
+    z-index: 10;
 }
 
 #shareDesktop #network {
@@ -434,6 +439,7 @@ header {
 #services .presentation {
     text-align: center;
     margin: 128px 32px 64px 32px;
+    font-size: 1.2rem;
 }
 
 
@@ -1422,6 +1428,7 @@ footer {
 
     #info #telephone {
         padding: 0px 0px;
+        width: 30px;
     }
 
     #info #telephone i {
@@ -1558,6 +1565,11 @@ footer {
 
     #services #carouselServices {
         margin: 0 8px;
+    }
+
+    .carousel-inner {
+        padding: 0 16px;
+        width: 98%;
     }
 
 
