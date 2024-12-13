@@ -9,7 +9,7 @@ document.getElementById("menu-icon").addEventListener("click", function () {
             menu.style.top = '0px';
             menu.style.transition = "top 0.6s ease";
         } else {
-            menu.style.top = "-388px";
+            menu.style.top = "-450px";
             menu.style.transition = "top 0.6s ease";
             
         }
@@ -18,7 +18,7 @@ document.getElementById("menu-icon").addEventListener("click", function () {
             menu.style.top = '0px';
             menu.style.transition = "top 0.6s ease";
         } else {
-            menu.style.top = "-388px";
+            menu.style.top = "-403px";
             menu.style.transition = "top 0.6s ease";
             
         }

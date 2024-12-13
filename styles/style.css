@@ -337,7 +337,6 @@ header {
     font-weight: bold;
     font-size: 1.2rem;
     width: 118px;
-    padding-bottom: 6px;
     margin: 0px auto;
     border-radius: 0 0 10px 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -357,6 +356,7 @@ header {
     width: 100%;
     border: 1px solid rgba(22, 10, 10, 0.24);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
+    transition: max-width 0.5s ease-in-out ;
 }
 
 #menuTwo {
@@ -366,7 +366,21 @@ header {
     align-items: center;
     text-align: center;
     margin-top: 8px;
+    margin-bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out ;
+    transition-delay: 0.5s;
+}
 
+#menuTwo li{
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+    
+
+}
+
+.animated {
+    max-width: 240px;
 }
 
 
@@ -1458,13 +1472,13 @@ footer {
         flex-direction: column;
         text-align: center;
         background-color: var(--element);
-        width: 41%;
-        height: 355px;
+        width: 53%;
+        height: 400px;
         position: absolute;
-        top: -388px;
-        left: 29%;
+        top: -403px;
+        left: 23%;
         transform: translateX(2%);
-        font-size: 1.6rem;
+        font-size: 1.9rem;
         font-weight: bold;
         border-radius: 0 0 15px 15px;
         z-index: 8;
@@ -1562,7 +1576,6 @@ footer {
     }
 
     .carousel-inner {
-        padding: 0 16px;
         width: 98%;
     }
 
@@ -1628,7 +1641,6 @@ footer {
 
     .sketch {
         margin-bottom: -16px;
-        margin-left: 22.5%;
 
     }
 
@@ -1907,10 +1919,7 @@ footer {
         margin-left: 80%;
     }
 
-    #menuBurger {
-        width: 168px;
-    }
-
+   
 
     /*============services==============*/
 
@@ -2005,7 +2014,7 @@ footer {
 
     .basPage .nousTrouver {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         text-align: center;
         margin: 8px 0px;
         font-size: 0.8rem;
@@ -2069,6 +2078,13 @@ footer {
     .basPage .partenaire img {
         width: 20%;
         margin-top: 8px;
+    }
+
+    @media (max-width: 576px) {
+        #menuBurger {
+            height: 440px;
+            top: -450px;
+        }
     }
 
 
