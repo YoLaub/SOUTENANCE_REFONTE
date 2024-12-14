@@ -8,7 +8,7 @@ document.getElementById("hookMenu").addEventListener("click", function () {
         blockMenu.style.maxWidth = "240px";
         setTimeout(() => {
             miniMenu.style.opacity = "1";
-        }, 50);
+        }, 40);
         
     } else {
         miniMenu.style.display = "none"
