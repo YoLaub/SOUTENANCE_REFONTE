@@ -30,6 +30,24 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/*Animation de rebond */
+@keyframes bounce {
+    0%, 100% {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -ms-transform: scale(1);
+      -o-transform: scale(1);
+}
+    50% {
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+}
+  }
+
 /* Réinitialisation des styles de base pour une meilleure compatibilité entre navigateurs */
 * {
     margin: 0;
@@ -428,11 +446,20 @@ header {
     border: 1px solid rgba(22, 10, 10, 0.24);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
     z-index: 10;
+    height: 60px;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -ms-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
 }
 
 #shareDesktop #network {
     display: none;
+    scale: 0;
     flex-direction: column;
+    animation: bounce 0.5s;
+    -webkit-animation: bounce 0.5s;
 }
 
 #shareDesktop .share {
