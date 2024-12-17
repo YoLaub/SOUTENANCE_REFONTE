@@ -15,7 +15,7 @@
     <link rel="icon" href="https://www.fermelemoulindubois.com/media/images/favicon.png" type="image/x-icon">
     <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-min.css">
     <title>La ferme Le moulin du bois</title>
 
 </head>
@@ -28,13 +28,11 @@
             <div id="info">
                 <div class="nousTrouver">
                     <a href="Contact.html" class="localisation"><i class="bi bi-geo-alt-fill"></i></a>
-
                 </div>
+
                 <div id="telephone">
-                    <a tabindex="0" class="btn btn-lg " role="button" data-bs-custom-class="custom-popover"
-                        data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="left"
-                        data-bs-title="Appelez-nous !" data-bs-content="06 48 24 81 30"><i id="iconeHeader"
-                            class="bi bi-telephone-fill"></i></a>
+                    <a href="tel:0666389355" tabindex="0" class="phoneMe" role="button"
+                    data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-placement="left" data-bs-title="Appelez-nous !" data-bs-content="06 48 24 81 30"><i id="iconeHeader" class="bi bi-telephone-fill"></i></a>
                 </div>
             </div>
 
@@ -459,9 +457,9 @@
     <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js.map"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts/menu.js"></script>
-    <script src="scripts/menuTwo.js"></script>
-    <script src="scripts/reseau.js"></script>
+    <script src="scripts/menu-min.js"></script>
+    <script src="scripts/menuTwo-min.js"></script>
+    <script src="scripts/reseau-min.js"></script>
     <script>
         const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
         const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))

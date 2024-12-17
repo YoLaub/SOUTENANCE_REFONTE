@@ -271,37 +271,34 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hautPage img {
     margin-left: auto;
     margin-right: auto;
-    margin-top: -85px;
-    margin-bottom: -8px;
     width: 50%;
 }
 
 .hautPage a {
-    margin: auto;
+    margin: 31px auto 0 auto;
 }
 
 #info {
     display: flex;
     justify-content: space-between;
-    margin: 16px auto;
+    margin: 18px 0px;
+    padding: 0 58px;
     width: 80%;
+    position: fixed;
 }
 
 #info .nousTrouver {
-    display: flex;
-    align-items: center;
     margin-left: 16px;
 
 }
 
 #info #telephone {
-    display: flex;
-    align-items: center;
     padding: 4px 11px;
 }
 
@@ -1455,13 +1452,19 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        margin: 8px 0;
-
+        align-items: center;
+        margin: 0px auto;
+        position: relative;
+        padding: 0;
     }
 
     #info #telephone {
         padding: 0px 0px;
         width: 30px;
+    }
+
+    #info .phoneMe {
+        width: auto;
     }
 
     #info #telephone i {
@@ -1479,8 +1482,7 @@ footer {
 
 
     #info .nousTrouver {
-        margin-right: 40px;
-        margin-left: 0px;
+        margin-right: 114px;
     }
 
 
